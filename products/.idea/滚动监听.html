@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--让IE按最新版本进行渲染-->
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <!--移动设备优先 视窗            宽度=设备宽度       缩放比例1倍-->
+    <meta name="viewport" content="width=device-width,initial-
+            <!--最大缩放比例1倍    禁止用户缩放-->
+    scale=1,maximum-scale=1,user-scalable=no"/>
+    <title></title>
+    <!--新Bootstrap核心css文件-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        nav{
+            height:100px;
+        }
+        section{
+            padding-top:50px;
+            height:800px;
+        }
+        section:nth-of-type(odd){
+            background:violet;
+        }
+        section:nth-of-type(even){
+            background:blanchedalmond;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#nav" data-offset="20">
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+        <ul class="nav nav-pills navbar-nav">
+            <li class="active"><a href="#sec1">选项1</a></li>
+            <li title="下边的提示工具" data-toggle="tooltip" data-placement="bottom"><a href="#sec2">选项2</a></li>
+            <li><a href="#sec3">选项3</a></li>
+            <li data-toggle="popover" title="下边的提示工具2" data-placement="bottom" data-animation="true" data-content="弹出框的内容部分" data-trigger="hover"><a href="#sec4">选项4</a></li>
+            <li><a href="#sec5">选项5</a></li>
+            <li>
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                选项6 <i class="caret"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="">下拉菜单11</a></li>
+                        <li><a href="">下拉菜单12</a></li>
+                        <li><a href="">下拉菜单13</a></li>
+                        <li><a href="">下拉菜单14</a></li>
+                        <li><a href="">下拉菜单15</a></li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section id="sec1">111111111</section>
+    <section id="sec2">2222222222</section>
+    <section id="sec3">3333333333333333333333</section>
+    <section id="sec4">4444444444444444</section>
+    <section id="sec5">55555555555555555</section>
+</header>
+
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+    })
+</script>
+</body>
+</html>
+

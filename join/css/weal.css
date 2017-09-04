@@ -1,0 +1,607 @@
+/********************************sub_nav 结束******************************/
+#nav2{
+	width:100%;
+	background:#ff7d05;
+	border:0;
+	min-height:45px !important;
+	margin-bottom:0;
+}
+#nav2 ul li:hover a{
+	background:#ce550b;
+}
+#nav2 ul .active a{
+	background:#ce550b;
+}
+#nav2 .nav_con{
+	width:1200px;
+	margin:0 auto;
+}
+#nav2 .nav_con ul li a{
+	display:inline-block;
+	float:left;
+	height:45px;
+	line-height:45px;
+	padding:0px 30px;
+	font-size: 14px;
+	color:#fff;
+	border-radius:0;
+}
+.fix{
+	position:fixed !important;
+	top:0 !important;
+	left:0 !important;
+	z-index:11111111111111111;
+}
+/********************************sub_nav 结束******************************/
+/********************************main 开始******************************/
+.main{
+	position: relative;
+	max-width: 1920px;
+	height: 850px;
+	background: url(../images/welfare_bg.jpg) no-repeat center center;
+	overflow: hidden;
+}
+/********************************星星闪开始******************************/
+.main .star{
+	-webkit-animation-name: star;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: star;
+	-moz-animation-timing-function: linear;
+	-moz-animation-fill-mode: forwards;
+	-moz-animation-iteration-count: infinite;
+}
+@keyframes star{
+	0% {
+	    -webkit-transform: scale(1);
+	    transform: scale(1);
+	}
+	33% {
+	    -webkit-transform: scale(.9);
+	    transform: scale(.9);
+	}
+	66% {
+	    -webkit-transform: scale(1.3);
+	    transform: scale(1.3);
+	}
+	100% {
+	    -webkit-transform: scale(1);
+	    transform: scale(1);
+	}
+}
+.main .ele-star1{
+	position: absolute;
+	width: 18px;
+	top: 130px;
+	left: 230px;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-duration: 2s;
+	-moz-animation-delay: 0.5s;
+}
+.main .ele-star2{
+	position: absolute;
+	width: 24px;
+	top: 355px;
+	left: 135px;
+	-webkit-animation-duration: 3.5s;
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-duration: 3.5s;
+	-moz-animation-delay: 0.3s;
+}
+.main .ele-star3{
+	position: absolute;
+	width: 14px;
+	top: 194px;
+	left: 906px;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-delay: 0.8s;
+	-moz-animation-duration: 1.5s;
+	-moz-animation-delay: 0.8s;
+}
+.main .ele-star4{
+	position: absolute;
+	width: 25px;
+	top: 385px;
+	right: 800px;
+	-webkit-animation-duration: 3.5s;
+	-webkit-animation-delay: 0.8s;
+	-moz-animation-duration: 3.5s;
+	-moz-animation-delay: 0.8s;
+}
+.main .ele-star5{
+	position: absolute;
+	width: 18px;
+	top: 465px;
+	right: 720px;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-duration: 2.5s;
+	-moz-animation-delay: 0.4s;
+}
+.main .ele-star6{
+	position: absolute;
+	width: 14px;
+	top: 430px;
+	right: 375px;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-duration: 2s;
+	-moz-animation-delay: 0.4s;
+}
+/********************************星星闪结束******************************/
+.main .main_con{
+	width: 1200px;
+	margin: 0 auto;
+}
+/********************************标题入场动画开始******************************/
+.main .main_con .title{
+	width: 301px;
+	height: 97px;
+	background-position: 0 0;
+	margin: 40px auto 0;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-name: zoomInDown;
+	-webkit-animation-timing-function: ease-out;
+	-moz-animation-duration: 1.5s;
+	-moz-animation-fill-mode: both;
+	-moz-animation-name: zoomInDown;
+	-moz-animation-timing-function: ease-out;
+	background-image: url(../images/welfare_icon.png);
+	background-repeat: no-repeat;
+}
+@keyframes zoomInDown{
+	0% {
+	    -webkit-transform: scale(1);
+	    transform: scale(1);
+	}
+	33% {
+	    -webkit-transform: scale(.9);
+	    transform: scale(.9);
+	}
+	66% {
+	    -webkit-transform: scale(1.3);
+	    transform: scale(1.3);
+	}
+	100% {
+	    -webkit-transform: scale(1);
+	    transform: scale(1);
+	}
+	0% {
+	    -moz-transform: scale(1);
+	    transform: scale(1);
+	}
+	33% {
+	    -moz-transform: scale(.9);
+	    transform: scale(.9);
+	}
+	66% {
+	    -moz-transform: scale(1.3);
+	    transform: scale(1.3);
+	}
+	100% {
+	    -moz-transform: scale(1);
+	    transform: scale(1);
+	}
+}
+/********************************标题入场动画结束******************************/
+.main .main_con .sun{
+	position: absolute;
+	left: 75px;
+	top: 60px;
+	width: 106px;
+	height: 106px;
+	background-position: -195px -460px;
+	background-image: url(../images/welfare_icon.png);
+	background-repeat: no-repeat;
+}
+/********************************云朵开始******************************/
+.main .main_con .cloud{
+	width: 140px;
+	height: 82px;
+	cursor: pointer;
+	background-image: url(../images/welfare_icon.png);
+	-webkit-animation-duration: 20s;
+	-webkit-animation-delay: 0;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-moz-animation-duration: 20s;
+	-moz-animation-delay: 0;
+	-moz-animation-timing-function: linear;
+	-moz-animation-fill-mode: forwards;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	background-repeat: no-repeat;
+}
+.main .main_con .ele-cloud1{
+	position: absolute;
+	top: 210px;
+	left: 55px;
+	background-position: 0 -117px;
+	-webkit-animation-name: cloud-1;
+	-moz-animation-name: cloud-1;
+}
+@keyframes cloud-1{
+	0% {
+	    left: 55px;
+	}
+	10% {
+	    left: 100px;
+	}
+	20% {
+	    left: 145px;
+	}
+	30% {
+	    left: 190px;
+	}
+	40% {
+	    left: 235px;
+	}
+	50% {
+	    left: 280px;
+	}
+	60% {
+	    left: 325px;
+	}
+	70% {
+	    left: 370px;
+	}
+	80% {
+	    left: 415px;
+	}
+	90% {
+	    left: 460px;
+	}
+	100% {
+	    left: 505px;
+	}
+}
+.main .main_con .ele-cloud2{
+	position: absolute;
+	top: 150px;
+	left: 315px;
+	background-position: -160px -117px;
+	-webkit-animation-name: cloud-2;
+	-moz-animation-name: cloud-2;
+}
+@keyframes cloud-2{
+	0% {
+	    left: 315px;
+	}
+	10% {
+	    left: 284px;
+	}
+	20% {
+	    left: 253px;
+	}
+	30% {
+	    left: 222px;
+	}
+	40% {
+	    left: 191px;
+	}
+	50% {
+	    left: 160px;
+	}
+	60% {
+	    left: 129px;
+	}
+	70% {
+	    left: 98px;
+	}
+	80% {
+	    left: 67px;
+	}
+	90% {
+	    left: 36px;
+	}
+	100% {
+	    left: 5px;
+	}
+}
+.main .main_con .ele-cloud3{
+	position: absolute;
+	top: 181px;
+	right: 360px;
+	background-position: 0 -219px;
+	-webkit-animation-name: cloud-3;
+	-moz-animation-name: cloud-3;
+}
+@keyframes cloud-3{
+	0% {
+	    right: 360px;
+	}
+	10% {
+	    right: 324px;
+	}
+	20% {
+	    right: 288px;
+	}
+	30% {
+	    right: 252px;
+	}
+	40% {
+	    right: 216px;
+	}
+	50% {
+	    right: 180px;
+	}
+	60% {
+	    right: 144px;
+	}
+	70% {
+	    right: 108px;
+	}
+	80% {
+	    right: 72px;
+	}
+	90% {
+	    right: 36px;
+	}
+	100% {
+	    right: 0;
+	}
+}
+
+.main .main_con .ele-cloud4{
+	position: absolute;
+	top: 255px;
+	right: 100px;
+	background-position: -160px -219px;
+	-webkit-animation-name: cloud-4;
+	-moz-animation-name: cloud-4;
+}
+@keyframes cloud-4{
+	0% {
+	    right: 100px;
+	}
+	10% {
+	    right: 140px;
+	}
+	20% {
+	    right: 180px;
+	}
+	30% {
+	    right: 220px;
+	}
+	40% {
+	    right: 260px;
+	}
+	50% {
+	    right: 300px;
+	}
+	60% {
+	    right: 340px;
+	}
+	70% {
+	    right: 380px;
+	}
+	80% {
+	    right: 420px;
+	}
+	90% {
+	    right: 460px;
+	}
+	100% {
+	    right: 500px;
+	}
+}
+/********************************云朵结束******************************/
+/********************************气球开始******************************/
+.main .main_con .balloon{
+	position: absolute;
+	left: 260px;
+	bottom: 320px;
+	width: 60px;
+	height: 118px;
+	background-position: 0 -449px;
+	-webkit-animation-name: balloon;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 0;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-moz-animation-name: balloon;
+	-moz-animation-duration: 2s;
+	-moz-animation-delay: 0;
+	-moz-animation-timing-function: linear;
+	-moz-animation-fill-mode: forwards;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	background-image:url(../images/welfare_icon.png);
+	background-repeat:no-repeat;
+}
+@keyframes balloon{
+	0% {
+	    bottom: 320px;
+	}
+	10% {
+	    bottom: 322px;
+	}
+	20% {
+	    bottom: 324px;
+	}
+	30% {
+	    bottom: 326px;
+	}
+	40% {
+	    bottom: 328px;
+	}
+	50% {
+	    bottom: 330px;
+	}
+	60% {
+	    bottom: 332px;
+	}
+	70% {
+	    bottom: 334px;
+	}
+	80% {
+	    bottom: 336px;
+	}
+	90% {
+	    bottom: 338px;
+	}
+	100% {
+	    bottom: 340px;
+	}
+}
+/********************************气球结束******************************/
+/********************************飞机开始******************************/
+.main .airplane{
+	position: absolute;
+	right: 0;
+	top: 390px;
+	width: 136px;
+	height: 110px;
+	-webkit-animation-name: airplane;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-delay: 0;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-moz-animation-name: airplane;
+	-moz-animation-duration: 20s;
+	-moz-animation-delay: 0;
+	-moz-animation-timing-function: linear;
+	-moz-animation-fill-mode: forwards;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: normal;
+}
+@keyframes airplane{
+	0% {
+	    right: 0;
+	}
+	10% {
+	    right: 192px;
+	}
+	20% {
+	    right: 384px;
+	}
+	30% {
+	    right: 576px;
+	    -webkit-transform: rotate(10deg);
+	}
+	40% {
+	    right: 768px;
+	    -webkit-transform: rotate(0);
+	}
+	50% {
+	    right: 960px;
+	    -webkit-transform: rotate(10deg);
+	}
+	60% {
+	    right: 1152px;
+	    -webkit-transform: rotate(0);
+	}
+	70% {
+	    right: 1344px;
+	}
+	80% {
+	    right: 1536px;
+	}
+	90% {
+	    right: 1728px;
+	}
+	100% {
+	    right: 1920px;
+	}
+}
+.main .airplane .plane01{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 117px;
+    height: 106px;
+    background-position: 0 -323px;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 3s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;	
+    background-image: url(../images/welfare_icon.png);
+	background-repeat: no-repeat;
+}
+.main .airplane .plane02{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 114px;
+	height: 45px;
+	background-position: -187px -323px;
+	background-image: url(../images/welfare_icon.png);
+	background-repeat: no-repeat;
+}
+/********************************飞机 结束******************************/
+/********************************main 结束******************************/
+/********************************弹出框开始******************************/
+.welfare-mask{
+	z-index: 9998;
+	position: absolute;
+	left: 50%;
+	top: 150px;
+	width: 668px;
+	font-size: 14px;
+	color: #666;
+	font-family: "Microsoft YaHei", "微软雅黑", "\5FAE\8F6F\96C5\9ED1";
+	margin-left: -334px;
+	font-size: 14px;
+	color: #666;
+	font-family:"microsoft yahei";
+	display:none;
+}
+.welfare-masker{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9997;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.welfare-mask .close {
+    position: absolute;
+    z-index: 9999;
+    top: 101px;
+    right: -20px;
+    width: 35px;
+    height: 35px;
+    background-position: -191px -400px;
+    cursor: pointer;
+    background-image: url(../images/welfare_icon.png);
+	background-repeat: no-repeat;
+}
+.welfare-mask .top{
+	position: relative;
+	z-index: 999;
+	width: 100%;
+}
+.welfare-mask .top img{
+	display:block;
+}
+.welfare-mask .mid{
+	min-height: 100px;
+	background: url(../images/welfare_mask_bg.png) repeat-y 0 0;
+	padding: 0 20px;
+}
+.welfare-mask .bom{
+	height: 20px;
+	background: url(../images/welfare_mask_bom.png) no-repeat 0 0;
+}
+/********************************弹出框结束******************************/

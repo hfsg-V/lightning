@@ -1,0 +1,56 @@
+
+/********************************banner 开始******************************/
+
+.banner {
+	background: url(../images/business.jpg) no-repeat center top;
+	height: 284px;
+}
+/********************************banner 结束******************************/
+/********************************main 开始******************************/
+.main {
+	background: #fff;
+}
+.main div {
+	width: 1000px;
+	margin: 0 auto;
+}
+.main ul {
+	padding-top: 30px;
+}
+.main ul li {
+	padding: 30px 40px;
+}
+.main ul li h3,
+#business ol li p {
+	width: 1000px;
+	margin: 0 auto;
+}
+.main ul h3 {
+	font-size: 18px;
+	color: #888888;
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+.main ul h3 span {
+	color: #ff5842;
+	display:inline-block;
+}
+.main ul h3 b {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-image:url(../../news/images/sprite.png);
+	background-repeat: no-repeat;
+	background-position: -144px -38px;
+	margin: -6px 5px 0 0;
+}
+.main ul p {
+	font-size: 14px;
+	color: #888888;
+}
+.main .odd {
+	background: #f6f6f6;
+}
+
+
+/********************************main 结束******************************/

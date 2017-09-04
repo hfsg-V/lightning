@@ -1,0 +1,299 @@
+body {
+	background: #fafaf9;
+}
+/********************************news 开始******************************/
+
+.news {
+	width: 1200px;
+	margin: 0 auto;
+}
+.news h3 {
+	width: 1200px;
+	padding-top: 40px;
+	height: 54px;
+	line-height: 54px;
+	color: #ff5842;
+	font-size: 32px;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom:15px;
+	font-weight:normal;
+}
+.news h3 span {
+	color: #a0a0a0;
+	font-weight: 500;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	margin-left: 10px;
+}
+.news_con {
+	width: 1200px;
+	height: 170px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.img li {
+	float: left;
+	width: 1200px;
+	height: 170px;
+}
+.img li .right{
+	width: 880px;
+    float: left;
+    padding-right: 20px;
+}
+.img li .right h4{
+	margin-bottom: 10px;
+}
+.img li .right h4 a{
+	font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    text-decoration:none;
+}
+.img li .right p{
+	font-size: 14px;
+    color: #686868;
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+.img li .right p:nth-of-type(1){
+	color: #ff5842;
+}
+.img li .right>a{
+	display: block;
+    background: #ff5842;
+    padding: 10px 30px;
+    width: 150px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    text-shadow: 0px 0px 3px #d71d04;
+    margin-bottom: 10px;
+    text-decoration:none;
+    transition: all .5s ease;
+}
+.img li .right>a:hover{
+	box-shadow: 0 0 8px #999999;
+}
+.img li img {
+	display: block;
+    float: left;
+    margin-right: 5px;
+    margin-left: 45px;
+    width: 210px;
+    height: 170px;
+}
+.btn span {
+	display: block;
+	width: 40px;
+	height: 170px;
+	background: #e5e5e5;
+	text-align: center;
+    color: #999;
+	font-size: 40px;
+	line-height: 100px;
+	cursor: pointer;
+	font-family: simhei;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+.btn span:hover{
+	font-size: 42px;
+	color: #f60;
+}
+.btn .prev {
+	font-size: 32px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 1;
+    line-height: 170px;
+}
+
+.btn .next {
+	position: absolute;
+	right: 0;
+	font-size: 32px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 1;
+    line-height: 170px;
+}
+
+.num .active {
+	background-color: #fff;
+}
+
+.hide {
+	display: none;
+}
+/********************************news 结束******************************/
+/********************************about 开始******************************/
+.about {
+	width: 1200px;
+	margin: 0 auto;
+}
+.about h3 {
+	width: 1200px;
+	padding-top: 40px;
+	height: 54px;
+	line-height: 54px;
+	color: #ff5842;
+	font-size: 32px;
+	font-weight:normal;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom:15px;
+}
+.about h3 span {
+	color: #a0a0a0;
+	font-weight: 500;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	margin-left: 10px;
+}
+.about .about_content ul li a{
+	display:block;
+	height:5px;
+	position:absolute;
+	background:#ff5842;
+	top:0;
+	left:0;
+	width:380px;
+	font-size: 42px;
+	line-height: 167px;
+	text-align:center;
+	color: #fff;
+	overflow:hidden;
+	transition: all .5s ease;
+}
+.about .about_content ul li{
+	width:380px;
+	float:left;
+	margin-right:30px;
+	position:relative;
+}
+.about .about_content ul li:last-of-type{
+	margin-right:0;
+}
+.about .about_content li:hover a{
+	height:163px;
+	background:rgba(254,103,83,0.9)
+}
+.about .about_content li p:nth-of-type(2):hover{
+	color:#FD6600;
+}
+.about .about_content h4{
+	font-size: 24px;
+	padding: 20px 10px;
+	margin-top: 10px;
+	font-weight: 500;
+	background:url(../images/tubiao_03.jpg) no-repeat 326px center;
+}
+.about .about_content ul li:first-of-type h4{
+	background:url(../images/tubiao_06.jpg) no-repeat 326px center;
+}
+.about .about_content ul li:last-of-type h4{
+	background:url(../images/person.jpg) no-repeat 325px center;
+}
+.about .about_content ul li p:first-of-type{
+	padding: 10px;
+	color: #686868;
+	font-size: 14px;
+}
+.about .about_content ul li p:nth-of-type(2){
+	background: #eeeeee;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 10px;
+	letter-spacing: 1px;
+	margin-top: 6px;
+	display: block;
+}
+/********************************about 结束******************************/
+/********************************service 开始******************************/
+.service {
+	width: 1200px;
+	margin: 0 auto;
+}
+.service h3 {
+	width: 1200px;
+	padding-top: 40px;
+	height: 54px;
+	line-height: 54px;
+	color: #ff5842;
+	font-size: 32px;
+	font-weight:normal;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom:15px;
+}
+.service h3 span {
+	color: #a0a0a0;
+	font-weight: 500;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	margin-left: 10px;
+}
+.service .service_content ul li{
+	float: left;
+	text-align: center;
+	padding: 0px 37px;
+	margin: 20px 0;
+}
+.service .service_content ul li a{
+	color: #666;
+	font-size: 14px;
+}
+.service .service_content ul li a b{
+	display: block;
+	width: 125px;
+	height: 125px;
+	background: url(../images/product.png) no-repeat;
+	margin-bottom: 10px;
+	transition: all 0.5s ease-out;
+}
+.service .service_content ul .one b{
+	background-position: 0px 0px;
+}
+.service .service_content ul .one:hover b{
+	background-position: 0px -126px;
+}
+.service .service_content ul .two b{
+	background-position: -130px 0px;
+}
+.service .service_content ul .two:hover b{
+	background-position: -130px -126px;
+}
+.service .service_content ul .three b{
+	background-position: -260px 0px;
+}
+.service .service_content ul .three:hover b{
+	background-position: -260px -126px;
+}
+.service .service_content ul .four b{
+	background-position: -390px 0px;
+}
+.service .service_content ul .four:hover b{
+	background-position: -390px -126px;
+}
+/********************************service 结束******************************/
+.wrapper ul li a{
+	color: #000;
+	display:block;
+	height:590px;
+	text-decoration: none;
+}
+.wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	height:590px;
+}
+.wrapper ul li img{
+	height:590px;
+}

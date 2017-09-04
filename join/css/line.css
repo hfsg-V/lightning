@@ -1,0 +1,192 @@
+body{
+	background:#fafaf9;
+}
+/********************************sub_nav 结束******************************/
+#nav2{
+	width:100%;
+	background:#ff7d05;
+	border:0;
+	min-height:45px !important;
+	margin-bottom:0;
+	z-index:111111111111111;
+}
+#nav2 ul li:hover a{
+	background:#ce550b;
+}
+#nav2 ul .active a{
+	background:#ce550b;
+}
+#nav2 .nav_con{
+	width:1200px;
+	margin:0 auto;
+}
+#nav2 .nav_con ul li a{
+	display:inline-block;
+	float:left;
+	height:45px;
+	line-height:45px;
+	padding:0px 30px;
+	font-size: 14px;
+	color:#fff;
+	border-radius:0;
+}
+.fix{
+	position:fixed !important;
+	top:0 !important;
+	left:0 !important;
+}
+/********************************sub_nav 结束******************************/
+/********************************banner 开始******************************/
+.banner{
+	width:100%;
+	height:320px;
+	background:url(../images/school_banner.jpg) no-repeat center center;
+	background-size:cover;
+}
+/********************************banner 结束******************************/
+/********************************social_box 开始******************************/
+.social_box{
+	width:1200px;
+	margin:0 auto;
+	padding-top:30px;
+}
+.social_box .left_con{
+	width:220px;
+	float:left;
+}
+.social_box .left_con ul li{
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 2px;
+}
+.social_box .left_con ul li a{
+	display: block;
+	color: #424242;
+	background-color: #f2f2f2;
+	font-size: 18px;
+	padding-left: 20px;
+	transition:all .5s ease;
+}
+.social_box .left_con ul li:nth-of-type(2) a{
+	color: #fff;
+	background-color: #f60;
+}
+.social_box .left_con ul li a:hover{
+	color: #fff;
+	background-color: #f60;
+}
+.social_box .right_con{
+	width:960px;
+	float:right;
+}
+.social_box .right_con h3{
+	color: #1a1b1c;
+	font-size: 22px;
+	font-weight: 400;
+	border-bottom: solid 3px #808080;
+	padding-bottom: 10px;
+}
+.social_box .right_con .selTitle{
+	background-color: #e7e7e7;
+	padding: 10px 16px;
+	margin-top: 28px;
+}
+.social_box .right_con .selTitle span{
+	float: left;
+	line-height: 32px;
+	color: #1a1b1c;
+	font-size: 14px;
+}
+.social_box .right_con .selTitle .selector{
+	position: relative;
+	float: left;
+	width: 122px;
+	z-index:10;
+}
+.social_box .right_con .selTitle .selector #selected{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	color: #4c4c4c;
+	font-size: 14px;
+	text-align: center;
+	border: solid 1px #efefef;
+	background: #fff url(../images/sc_down_icon.jpg) no-repeat 100px center;
+	padding-right: 20px;
+	cursor: pointer;
+	overflow:hidden;
+}
+.social_box .right_con .selTitle .selector ul{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 31px;
+	width: 120px;
+	border: solid 1px #fff;
+	border-top: 0;
+	background-color: #fff;
+}
+.social_box .right_con .selTitle .selector ul li{
+	color: #4c4c4c;
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+}
+.social_box .right_con .selTitle .selector ul li:hover{
+	background-color:#EFEFEF;
+}
+.social_box .right_con .selTitle .tips{
+	float: right;
+	color: #ff7d05;
+	line-height: 32px;
+	font-size: 13px;
+}
+table{
+	border-collapse:collapse;
+}
+table td {
+    border: solid 1px #d9d9d9;
+	background-color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	color: #595959;
+	font-size: 16px;
+	padding:10px 18px;
+}
+table td img{
+	display:inline-block;
+	margin-right:10px;
+	float: left;
+}
+.social_box .page-box{
+	padding:23px 0 100px 0;
+}
+.social_box .page-box a{
+	display:inline-block;
+	float:right;
+	margin-right:2px;
+	width:26px;
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	background:#ff6600;
+	color:#fff;
+	cursor:pointer;
+}
+.social_box .page-box a:nth-last-of-type(2){
+	background:#fff;
+	color:#ff6600;
+}
+table .tl{
+	text-align:left !important;
+	line-height:70px;
+}
+/********************************social_box 结束******************************/
+.concent{
+	position: fixed;
+	z-index: 11111;
+	right: 0;
+	top: 28%;
+	width: 180px;
+}

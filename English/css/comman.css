@@ -1,0 +1,88 @@
+/*****************************************************************header��ʼ*************************************/
+.head {
+    background: url('../images/bg-head.png') no-repeat 50% 0;
+}
+.head-layout {
+    position: relative;
+    height: 106px;
+}
+.min-width {
+    width: 1240px;
+    margin: 0 auto;
+}
+.head .logo {
+    position: absolute;
+    z-index: 2;
+    top: 2px;
+    left: 50%;
+    margin-left: -73px;
+}
+.head .nav {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+.head .nav .link {
+    position: absolute;
+    top: 48px;
+    height: 19px;
+    background-image: url('../images/bg-global.png');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: -1000px;
+}
+.head .nav .link-about {
+    width:68px;
+    left: 240px;
+    background-position: 0 0;
+}
+.head .nav .link-about:hover{
+    background-position: 0 -29px;
+}
+.head .nav .link-news {
+    left: 375px;
+    width: 56px;
+    background-position: -78px 0;
+}
+.head .nav .link-news:hover{
+    background-position: -78px -29px;
+}
+.head .nav .link-games{
+    right: 375px;
+    width: 67px;
+    background-position: -144px 0;
+}
+.head .nav .link-games:hover{
+    background-position: -144px -29px;
+}
+.head .nav .link-shows {
+    right: 240px;
+    width: 71px;
+    background-position: -221px 0;
+}
+.head .nav .link-shows:hover{
+    background-position: -221px -29px;
+}
+/*****************************************************************header����*************************************/
+/*****************************************************************footer��ʼ*************************************/
+footer {
+    background: url('../images/bg-foot.png') no-repeat 50% 0;
+}
+.foot-layout {
+    position: relative;
+    height: 106px;
+}
+footer .logo {
+    float: left;
+    margin: 19px 0 19px 290px;
+}
+footer .copyright {
+    float: right;
+    margin: 25px 296px 25px 0;
+    text-align: left;
+    line-height: 28px;
+    color: #fff;
+    font-size: 14px;
+    font-weight:normal;
+}
+/*****************************************************************footer����*************************************/

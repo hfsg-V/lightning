@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/weal.css"/>
+		<link rel="stylesheet" type="text/css" href="../comman/comman.css"/>
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../comman/comman.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!---------------------------------header 开始----------------------->
+		<header class="clearfix">
+			<div class="head">
+				<h2 class="left">
+					<a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="" /></a>
+				</h2>
+				<nav class="right">
+					<div id="nav" class="nav-side">
+						<div id="nav-div">
+							<ul>
+								<li>
+									<a href="../index.html">官网首页</a>
+								</li>
+								<li>
+									<a href="../about/about.html">关于电魂</a>
+								</li>
+								<li>
+									<a href="../news/new.html">电魂咨询</a>
+								</li>
+								<li>
+									<a href="../products/products.html">电魂产品</a>
+								</li>
+								<li>
+									<a href="partenr.html">商务合作</a>
+								</li>
+								<li>
+									<a href="../graceful/graceful.html">电魂风采</a>
+								</li>
+								<li class="on">
+									<a href="../join/social.html">加入电魂</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<a href="../English/index.html" class="English"><img src="../images/English.jpg" alt=""/></a>
+			</div>
+		</header>
+		<nav id="nav2">
+	    	<div class="nav_con">
+		        <ul class="nav nav-pills navbar-nav">
+		            <li><a href="social.html">社会招聘</a></li>
+		            <li><a href="school.html">校园招聘</a></li>
+		            <li class="active"><a href="weal.html">电魂福利</a></li>
+		        </ul>
+	        </div>
+	    </nav>
+		<!---------------------------------header 结束----------------------->
+		<!---------------------------------main 开始----------------------->
+		<div class="main">    
+		    <div class="star ele-star1"><img src="images/welfare_star.png" /></div>
+		    <div class="star ele-star2"><img src="images/welfare_star.png" /></div>
+		    <div class="star ele-star3"><img src="images/welfare_star.png" /></div>
+		    <div class="star ele-star4"><img src="images/welfare_star.png" /></div>
+		    <div class="star ele-star5"><img src="images/welfare_star.png" /></div>
+		    <div class="star ele-star6"><img src="images/welfare_star.png" /></div>
+		   <div class="main_con" id="welfareCloud">
+		        <p class="title"></p>
+		        <p class="sun"></p>
+		        <p class="cloud ele-cloud1" data-cloud="caifu" id="ele-cloud1" onclick="changeCon('1')"></p><!-- // 财富 -->
+		        <p class="cloud ele-cloud2" data-cloud="guanhuai" id="ele-cloud2" onclick="changeCon('2')"></p><!-- // 关怀 -->
+		        <p class="cloud ele-cloud3" data-cloud="chengzhang" id="ele-cloud3" onclick="changeCon('3')"></p><!-- // 成长 -->
+		        <p class="cloud ele-cloud4" data-cloud="jiankang" id="ele-cloud4" onclick="changeCon('4')"></p><!-- // 健康 -->
+		        <p class="balloon"></p>
+		    </div>
+		    <div class="airplane">
+		        <p class="plane01"></p>
+		        <p class="plane02"></p>
+		    </div>
+		</div>
+		<!---------------------------------main 结束----------------------->
+		
+		<!---------------------------------弹出框 开始----------------------->
+		<div class="welfare-masker" id="welfareMasker"></div>
+		<!-- // .welfare-box -->
+		<div class="welfare-mask" id="cloud1">
+		    <p class="close" onclick="closeAlert(this)"></p>
+		    <div class="top"><img src="images/welfare_mask_cfu.png" /></div>
+		    <div class="mid">
+		        <p><span>基本工资：</span>公司为员工提供行业内富有竞争力的基本工资。</p>
+		        <p><span>项目奖金：</span>公司根据项目营收情况及员工绩效，为员工提供丰厚的项目奖金。</p>
+		        <p><span>股权：</span>公司支持内部创业，员工还有机会获得创业子公司的股权。</p>
+		        <p><span>年终服务奖：</span>公司为每一位服务到年末的员工提供年终服务奖。</p>
+		        <p><span>五险一金：</span>公司依法为每一位正式员工缴纳社会保险和住房公积金。</p>
+		    </div>
+		    <div class="bom"></div>
+		</div>
+		<div class="opac"></div>
+		<!-- // 关怀 -->
+		<div class="welfare-mask" id="cloud2">
+		    <p class="close" onclick="closeAlert(this)"></p>
+		    <div class="top"><img src="images/welfare_mask_ghuai.png" /></div>
+		    <div class="mid">
+		        <p><span>假期：</span>员工拥有年休假、全薪病假、婚假、丧假、产假、陪产假、孕检假、调休假等假期，以保证工作生活平衡。</p>
+		        <p><span>每日水果饮料：</span>公司每天为员工提供新鲜的水果或饮料，夏季不定期提供解暑冷饮。</p>
+		        <p><span>节日：</span>每一个传统节日里公司都会为员工定制特色大礼包，让员工拥有一个温暖的节日。</p>
+		        <p><span>生日：</span>在员工生日当月，发放生日礼品及专属生日电子贺卡。</p>
+		        <p><span>购房购车免息借款：</span>公司为员工提供首次购房、购车免息借款，最高额度可达<strong>30万</strong>。</p>
+		        <p><span>结婚：</span>员工在职期间登记结婚享有结婚礼金。</p>
+		        <p><span>生宝宝：</span>员工在职期间生宝宝享有生育礼金。</p>
+		        <p><span>家人探亲：</span>公司为来杭探亲的家属提供酒店式探亲房及精美的探亲礼品。</p>
+		        <p><span>员工疾病及员工家属慰问：</span>员工因患病或负伤及家庭遇自然灾害、重疾、意外事故等，公司第一时间给予慰问，慰问标准最高可达10000元。</p>
+		        <p><span>亲人逝世：</span>若遇员工的直系亲属逝世，公司提供丧葬慰问金表示安慰。</p>
+		        <p><span>部门活动经费：</span>公司每月为员工提供部门活动经费，以促进部门团队建设、跨部门交流。</p>
+		        <p><span>旅游：</span>公司给每位员工提供丰厚的旅游经费，并额外提供6天/年/人带薪旅游假。</p>
+		        <p><span>职业生涯里程碑：</span>在公司工作期间，公司在员工职业生涯每一个关键时刻提供周年贺礼。</p>
+		    </div>
+		    <div class="bom"></div>
+		</div>
+		<div class="opac"></div>
+		<!-- // 财富 -->
+		<div class="welfare-mask" id="cloud3">
+		    <p class="close" onclick="closeAlert(this)"></p>
+		    <div class="top"><img src="images/welfare_mask_czhang.png" /></div>
+		    <div class="mid">
+		        <p><span>成长：</span>公司为员工提供各类有针对性的培训，包括：入职培训、内部培训、外部培训。</p>
+		        <p><span>职业发展体系：</span>公司为员工打造了“双通道”职业发展体系，以解决员工在公司内部发展问题。</p>
+		    </div>
+		    <div class="bom"></div>
+		</div>
+		<div class="opac"></div>
+		<!-- // 成长 -->
+		<div class="welfare-mask" id="cloud4">
+		    <p class="close" onclick="closeAlert(this)"></p>
+		    <div class="top"><img src="images/welfare_mask_jkang.png" /></div>
+		    <div class="mid">
+		        <p><span>健康体检：</span>除刚入职可参加入职体检外，公司每年还组织一次大型的员工集体体检，帮助员工了解身体的最新状况。</p>
+		        <p><span>补充医疗保险：</span>公司为员工购买了补充医疗保险，门急诊及住院费用可以根据药品种类按相应的比例进行报销。</p>
+		        <p><span>重大疾病、意外身故险：</span>公司为员工投保了重大疾病、意外身故险，减轻员工和员工家人遭遇意外的负担。</p>
+		        <p><span>健康热线：</span>公司配有健康专员，为员工提供一对一的健康咨询。</p>
+		    </div>
+		    <div class="bom"></div>
+		</div>
+		<div class="opac"></div>
+		<!-- // 健康 -->
+		<!---------------------------------弹出框结束----------------------->
+		<!---------------------------------footer 开始----------------------->
+		<div style="height:100%; width:100%; background:red;"></div>
+		<footer>
+			<div class="footer clearfix">
+				<div class="left">
+					<img src="../images/dh-logo-black.png" />
+				</div>
+				<div class="right">
+					<p>杭州电魂网络科技股份有限公司版权所有丨2008-2017 Electronic Soul - All Rights Reserved<br /> 增值电信业务经营许可证：浙B2-20090296 网络文化经营许可证：浙网文【2012】0804-079号<br /> 互联网出版许可证编号：新出网证（浙）45号
+						<img src="../images/ban.png" alt="" />
+						<a href="#"> 浙公网安备 33010802004869号</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!---------------------------------footer 结束----------------------->
+		<script type="text/javascript">
+	//  ——————————————————————————fix固定导航出现/消失
+			function getScrollTop(){
+				var scrollTop=document.documentElement.scrollTop || window.pageYOffset ||document.body.scrollTop;
+				return scrollTop;
+			}
+			window.onload=function(){
+				var menu=document.getElementById("nav2");
+				window.onscroll=function(){
+					if(getScrollTop()>104){
+						menu.className="fix";
+					}else{
+						menu.className=" ";
+					}
+				}
+			}	
+	//  ——————————————————————————模态框------------------	
+		var welfareMasker=document.getElementById("welfareMasker");
+		function changeCon(tabCon_num){
+			for(var i=1; i<=4; i++){
+				document.getElementById("cloud"+i).style.display="none";	
+			}
+			document.getElementById("cloud"+tabCon_num).style.display="block";
+			welfareMasker.style.display="block";
+		}
+		function closeAlert(obj){
+			obj.parentNode.style.display="none";
+			welfareMasker.style.display="none";
+		}
+						
+		</script>
+	</body>
+</html>

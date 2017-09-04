@@ -1,0 +1,229 @@
+/********************************************************main1开始*******************************************/
+.main1{
+    width:100%;
+    background:url("../images/bg-esoul.jpg") no-repeat center center;
+}
+.main1 .sec1{
+    width:1140px;
+    margin:0 auto;
+}
+.main1 .sec1 .sec1_left{
+    width:814px;
+    float:left;
+    padding-top:170px;
+    padding-bottom: 164px;
+    text-transform:uppercase;
+}
+.main1 .sec1 .sec1_left h4{
+    color: #8fc120;
+    font-size: 16px;
+    font-weight: 600;
+}
+.main1 .sec1 .sec1_left p{
+    margin-top: 30px;
+    line-height: 2;
+    color: #929292;
+    font-size: 16px;
+}
+.main1 .sec1 .sec1_right{
+    padding-top:156px;
+    float:right;
+}
+/********************************************************main1结束*******************************************/
+/********************************************************main2开始*******************************************/
+.main2{
+    width:100%;
+    background:url("../images/bg-milestone.jpg") no-repeat center 0;
+}
+.main2 .sec2 .top{
+    position: relative;
+    width: 1240px;
+    height: 280px;
+    margin: 0 auto;
+}
+.main2 .sec2 .sec2_left{
+    position: absolute;
+    top: 146px;
+    left: 0;
+    width: 966px;
+    text-align: center;
+}
+.main2 .sec2 .sec2_left li{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 15px;
+}
+.main2 .sec2 .sec2_left li span{
+    display: block;
+    margin-top: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 600;
+}
+.main2 .sec2 .sec2_left li:last-of-type a{
+    background:url('../images/bg-node-future.png') no-repeat 50% 50%;
+}
+.main2 .sec2 .sec2_left li:last-of-type a i{
+    background:none;
+}
+.main2 .sec2 .sec2_left li a{
+    display: block;
+    width: 45px;
+    height: 55px;
+    background: url('../images/bg-node-normal.png') no-repeat 50% 0;
+    margin: 0 auto;
+}
+.main2 .sec2 .sec2_left li a i{
+    position: relative;
+    top: 14px;
+    display: block;
+    width: 23px;
+    height: 25px;
+    background: url('../images/bg-pointer.png') no-repeat 50% 50%;
+    margin: 0 auto;
+}
+.main2 .sec2 .sec2_left li:hover a i{
+    -webkit-animation: shake 1s infinite linear;
+    -moz-animation: shake 1s infinite linear;
+    animation: shake 1s infinite linear;
+}
+.main2 .sec2 .sec2_left li.on a{
+    background:url('../images/bg-node-hover.png') no-repeat 50% 50%;
+}
+.main2 .sec2 .sec2_left li.on a i{
+    background-image: url('../images/bg-pointer-hover.png');
+    -webkit-animation: shake 1s infinite linear;
+    -moz-animation: shake 1s infinite linear;
+    animation: shake 1s infinite linear;
+}
+@keyframes shake{
+    0% {
+        top: 14px;
+    }
+    25% {
+        top: 10px;
+    }
+    50% {
+        top: 14px;
+    }
+    75% {
+        top: 16px;
+    }
+    100% {
+        top: 14px;
+    }
+}
+.main2 .sec2 .sec2_right{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 326px;
+    height: 300px;
+    background:url("../images/hero.png") no-repeat center center;
+}
+.main2 .sec2 .bottom{
+    width:100%;
+    background:url("../images/bg-event.jpg") no-repeat center 0;
+}
+.main2 .sec2 .bottom .bottom_con{
+    position: relative;
+    width: 1160px;
+    min-height: 242px;
+    margin: 0 auto;
+}
+.main2 .sec2 .bottom .bottom_left{
+    width: 628px;
+    padding: 30px 0;
+    text-transform: uppercase;
+}
+.main2 .sec2 .bottom .bottom_left div h4{
+    margin-bottom: 6px;
+    color: #8fc120;
+    font-size: 36px;
+    font-weight: 600;
+}
+.main2 .sec2 .bottom .bottom_left div p{
+    line-height: 2;
+    color: #929292;
+    font-size: 14px;
+}
+.main2 .sec2 .bottom .bottom_right{
+    position: absolute;
+    top: 112px;
+    left: 720px;
+    text-transform: uppercase;
+}
+.main2 .sec2 .bottom .bottom_right p{
+    line-height: 2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+/********************************************************main2结束*******************************************/
+/********************************************************main3开始*******************************************/
+.main3{
+    width:100%;
+    background: url('../images/bg-vision.jpg') no-repeat center 0;
+    background-size:cover;
+}
+.main3 div{
+    width:1240px;
+    margin:0 auto;
+    height:104px;
+    position: relative;
+    padding-top: 158px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main3 div h4{
+    margin-bottom: 16px;
+    color: #424242;
+    font-size: 16px;
+    font-weight: 600;
+}
+.main3 div p{
+    line-height: 2;
+    color: #8fc120;
+    font-size: 16px;
+    font-weight: 600;
+}
+/********************************************************main3结束*******************************************/
+/********************************************************main4开始*******************************************/
+.main4{
+    width:100%;
+    background:url("../images/bg-contact.jpg") no-repeat center 0;
+}
+.main4 .sec4{
+    position: relative;
+    width: 1240px;
+    height: 598px;
+    margin: 0 auto;
+}
+.main4 .sec4 div{
+    position: absolute;
+    top: 230px;
+    left: 316px;
+    text-transform: uppercase;
+}
+.main4 .sec4 div p{
+    position: relative;
+    width: 716px;
+    margin-bottom: 25px;
+    line-height: 2;
+    color: #929292;
+    font-size: 16px;
+}
+.main4 .sec4 div p b{
+    position: absolute;
+    top: 0;
+    left: -190px;
+    width: 180px;
+    text-align: right;
+    color: #8fc120;
+    font-weight: 600;
+    font-family: "黑体";
+}
+/********************************************************main4结束*******************************************/
+

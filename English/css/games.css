@@ -1,0 +1,223 @@
+/********************************************************.main开始**********************************************************/
+
+.main {
+	position: relative;
+	background-color: #121212;
+}
+
+
+/*******************************************.main背景开始***********************************/
+
+.main .main-bgs {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+.main .main-bgs .bg1 {
+	height: 940px;
+	background: url(../images/bg-main-game.jpg);
+}
+
+.main-bgs .bg.bg2 {
+	height: 950px;
+	background-image: url('../images/bg2.jpg');
+}
+
+.main-bgs .bg.bg3 {
+	height: 940px;
+	background-image: url('../images/bg3.jpg');
+}
+
+.main .main-bgs .bg {
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+
+
+/*******************************************.main背景结束***********************************/
+
+
+/********************************************************.main结束**********************************************************/
+
+.main-layout {
+	position: relative;
+	z-index: 2;
+	height: 2646px;
+	padding-top: 184px;
+}
+
+.card {
+	position: relative;
+	width: 1000px;
+	height: 286px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 96px;
+}
+
+.card .hero {
+	position: absolute;
+	top: -96px;
+	display: block;
+	width: 580px;
+	height: 478px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.card .gallery {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 548px;
+	height: 286px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.card .intro {
+	position: absolute;
+	bottom: 0;
+	width: 420px;
+	height: 130px;
+	-webkit-transition: height 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+	-moz-transition: height 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: height 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card .intro .intro-title {
+	margin-bottom: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #8fc120;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.card .intro .intro-txt {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	line-height: 20px;
+	color: #bbb;
+	font-size: 14px;
+}
+
+.card:hover .intro {
+	height: 286px;
+}
+
+.card1 {
+	margin-top: 0;
+}
+
+.card1 .hero {
+	left: -110px;
+	background-image: url('../images/card1-hero.png');
+}
+
+.card1 .gallery {
+	right: 0;
+	background-image: url('../images/card1-gallery.png');
+}
+
+.card1 .intro {
+	left: 20px;
+}
+
+
+.card2 .hero {
+	right: -110px;
+	background-image: url('../images/card2-hero.png');
+}
+
+.card2 .gallery {
+	left: 0;
+	background-image: url('../images/card2-gallery.png');
+}
+
+.card2 .intro {
+	right: 20px;
+}
+
+
+.card3 .hero {
+	left: -110px;
+	background-image: url('../images/card3-hero.png');
+}
+
+.card3 .gallery {
+	right: 0;
+	background-image: url('../images/card3-gallery.png');
+}
+
+.card3 .intro {
+	left: 20px;
+}
+
+
+.card4 .hero {
+	right: -110px;
+	background-image: url('../images/card4-hero.png');
+}
+
+.card4 .gallery {
+	left: 0;
+	background-image: url('../images/card4-gallery.png');
+}
+
+.card4 .intro {
+	right: 20px;
+}
+
+
+.card5 .hero {
+	left: -110px;
+	background-image: url('../images/card5-hero.png');
+}
+
+.card5 .gallery {
+	right: 0;
+	background-image: url('../images/card5-gallery.png');
+}
+
+.card5 .intro {
+	left: 20px;
+}
+
+
+.card6 .hero {
+	right: -110px;
+	background-image: url('../images/card6-hero.png');
+}
+
+.card6 .gallery {
+	left: 0;
+	background-image: url('../images/card6-gallery.png');
+}
+
+.card6 .intro {
+	right: 20px;
+}
+
+
+.card7 .hero {
+	left: -110px;
+	background-image: url('../images/card7-hero.png');
+}
+
+.card7 .gallery {
+	right: 0;
+	background-image: url('../images/card7-gallery.png');
+}
+
+.card7 .intro {
+	left: 20px;
+}

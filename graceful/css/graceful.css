@@ -1,0 +1,57 @@
+
+/********************************sub_nav 结束******************************/
+#nav2{
+	background:#ff7d05;
+	border:0;
+	min-height:45px !important;
+	margin-bottom:0;
+}
+#nav2 ul li:hover a{
+	background:#ce550b;
+}
+#nav2 ul .active a{
+	background:#ce550b;
+}
+#nav2 .nav_con{
+	width:1200px;
+	margin:0 auto;
+}
+#nav2 .nav_con ul li a{
+	display:inline-block;
+	float:left;
+	height:45px;
+	line-height:45px;
+	padding:0px 30px;
+	font-size: 14px;
+	color:#fff;
+	border-radius:0;
+}
+/********************************sub_nav 结束******************************/
+/********************************contain 开始******************************/
+.grid li h3,.grid li p{
+	padding: 5px 10px;	
+	font-size: 14px;
+	color:#333;
+}
+.grid li p{
+	font-size:12px;
+}
+.grid li img{
+	width:100%;
+	display:block;
+}
+.container #top{
+	position: fixed;
+	right: 50px;
+	bottom: 100px;
+	display: block;
+	display: none;
+	width: 60px;
+	height: 50px;
+	background:url(../../images/toTop.png) center center no-repeat,#000;
+	border-radius: 2px;
+	margin-bottom: 10px;
+	opacity: 0.6;
+	cursor:pointer;
+}
+/********************************contain 结束******************************/

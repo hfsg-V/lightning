@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<!--让IE按最新版本进行渲染-->
+		<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+		<!--移动设备优先 视窗            宽度=设备宽度       缩放比例1倍-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<!--新Bootstrap核心css文件-->
+		<link rel="stylesheet" type="text/css" href="../comman/comman.css"/>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/products.css" />
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+	</head>
+	<!--data-offset 锚点的最上端到可视区域的最上端之间的距离-->
+
+	<body data-spy="scroll" data-target="#nav2" data-offset="104">
+		<header class="clearfix" id="menu">
+			<div class="head">
+				<h2 class="left">
+					<a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="" /></a>
+				</h2>
+				<nav class="right">
+					<div id="nav" class="nav-side">
+						<div id="nav-div">
+							<ul>
+								<li>
+									<a href="../index.html">官网首页</a>
+								</li>
+								<li>
+									<a href="../about/about.html">关于电魂</a>
+								</li>
+								<li>
+									<a href="../news/new.html">电魂咨询</a>
+								</li>
+								<li>
+									<a href="products.html">电魂产品</a>
+								</li>
+								<li class="on">
+									<a href="../partner/partenr.html">商务合作</a>
+								</li>
+								<li>
+									<a href="../graceful/graceful.html">电魂风采</a>
+								</li>
+								<li>
+									<a href="../join/social.html">加入电魂</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<a href="../English/index.html" class="English"><img src="../images/English.jpg" alt=""/></a>
+			</div>
+		</header>
+		<nav class="navbar navbar-default" id="nav1">
+			<div class="nav_con">
+				<ul class="nav nav-pills navbar-nav">
+					<li class="active">
+						<a href="#sec1">梦三国2</a>
+					</li>
+					<li>
+						<a href="#sec2">梦塔防OL</a>
+					</li>
+					<li>
+						<a href="#sec3">梦三国手游</a>
+					</li>
+					<li>
+						<a href="#sec4">梦梦爱三国</a>
+					</li>
+					<li>
+						<a href="#sec5">次元战争</a>
+					</li>
+					<li>
+						<a href="#sec6">口袋梦三国</a>
+					</li>
+					<li>
+						<a href="#sec7">手机统军令</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!---------------------------------main 开始----------------------->
+		<!---------------------------------固定导航 开始----------------------->
+		<nav class="navbar navbar-default navbar-fixed-top" id="nav2">
+			<div class="nav_con">
+				<ul class="nav nav-pills navbar-nav">
+					<li class="active">
+						<a href="#sec1">梦三国2</a>
+					</li>
+					<li>
+						<a href="#sec2">梦塔防OL</a>
+					</li>
+					<li>
+						<a href="#sec3">梦三国手游</a>
+					</li>
+					<li>
+						<a href="#sec4">梦梦爱三国</a>
+					</li>
+					<li>
+						<a href="#sec5">次元战争</a>
+					</li>
+					<li>
+						<a href="#sec6">口袋梦三国</a>
+					</li>
+					<li>
+						<a href="#sec7">手机统军令</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!---------------------------------固定导航 结束----------------------->
+		<section id="sec1" class="section"><a href="#"></a></section>
+		<section id="sec2" class="section"><a href="#"></a></section>
+		<section id="sec3" class="section"><a href="#"></a></section>
+		<section id="sec4" class="section"><a href="#"></a></section>
+		<section id="sec5" class="section"><a href="#"></a></section>
+		<section id="sec6" class="section"><a href="#"></a></section>
+		<section id="sec7" class="section"><a href="#"></a></section>
+		<div id="top"></div>
+		<!---------------------------------main 结束----------------------->
+		<!---------------------------------footer 开始----------------------->
+		<footer>
+			<div class="footer clearfix">
+				<div class="left">
+					<img src="../images/dh-logo-black.png" />
+				</div>
+				<div class="right">
+					<p>杭州电魂网络科技股份有限公司版权所有丨2008-2017 Electronic Soul - All Rights Reserved<br /> 增值电信业务经营许可证：浙B2-20090296 网络文化经营许可证：浙网文【2012】0804-079号<br /> 互联网出版许可证编号：新出网证（浙）45号
+						<img src="../images/ban.png" alt="" />
+						<a href="#"> 浙公网安备 33010802004869号</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!---------------------------------footer 结束----------------------->
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript">
+			//		——————————————————————————header nav滑动开始————
+			$(document).ready(function(e) {
+					var navLi = $("#nav-div ul li"),
+						navUl = $("#nav-div ul"),
+						speed = 200;
+
+					function OnClick() {
+						n = navUl.find("li.on").index();
+						navUl.stop().animate({
+							backgroundPosition: navLi.width() * n - 98
+						}, speed);
+					}
+					OnClick();
+					navLi.hover(
+						function() {
+							n = $(this).index();
+							navUl.stop().animate({
+								backgroundPosition: navLi.width() * n + 10
+							}, speed);
+						},
+						function() {
+							OnClick();
+						})
+					navLi.click(function() {
+						$(this).addClass("on").siblings().removeClass("on")
+					});
+					$(window).scroll(function() {
+						if($(window).scrollTop() > $("#nav").height() + 50) {
+							$("#nav").addClass("scoll_nav")
+						} else {
+							$("#nav").removeClass("scoll_nav")
+						}
+					});
+				})
+				//		——————————————————————————header nav滑动结束————
+				//  ——————————————————————————fix固定导航出现/消失
+			function getScrollTop() {
+				var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+				return scrollTop;
+			}
+			window.onload = function() {
+				var menu1 = document.getElementById("nav1");
+				var menu2 = document.getElementById("nav2");
+				var top=document.getElementById("top");
+				menu2.style.display="none";
+				window.onscroll = function() {
+					if(getScrollTop() > 104) {
+						menu2.style.display="block";
+					} else {
+						menu2.style.display="none";
+					}
+					//--------------------向上滑动
+					if(getScrollTop()>400){
+						 top.style.display="block"
+					}else{
+						top.style.display="none"
+					}
+					var y=document.documentElement.scrollTop;		//兼容火狐
+					var i=document.body.scrollTop;		
+					top.onclick=function(){
+						time=setInterval(function(){
+							if(i>=0 || y>=0){
+								 i-=50;
+								 y-=50;	//兼容火狐
+		//								 z-=50;	//兼容IE
+								document.body.scrollTop=i;
+								document.documentElement.scrollTop=y;	//兼容火狐
+							} 
+						},20)
+					};
+				}
+			}
+		</script>
+	</body>
+
+</html>

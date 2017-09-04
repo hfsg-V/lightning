@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<title>图片轮播 jq(左右切换)</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			.banner {
+				width: 1200px;
+				height: 170px;
+				margin: 100px auto;
+				position: relative;
+				overflow: hidden;
+				z-index: 1;
+			}
+			
+			.img {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.des {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				z-index: -2;
+				background: #ccc
+			}
+			
+			.des li {
+				float: left;
+				width: 1200px;
+			}
+			
+			.img li {
+				float: left;
+				width: 1200px;
+				height: 170px;
+			}
+			.img li .right{
+				width: 880px;
+			    float: left;
+			    padding-right: 20px;
+			}
+			.img li .right h4{
+				margin-bottom: 10px;
+			}
+			.img li .right h4 a{
+				font-size: 20px;
+			    font-weight: 500;
+			    color: #333333;
+			    text-decoration:none;
+			}
+			.img li .right p{
+				font-size: 14px;
+			    color: #686868;
+			    margin-bottom: 10px;
+			    line-height: 22px;
+			}
+			.img li .right p:nth-of-type(1){
+				color: #ff5842;
+			}
+			.img li .right>a{
+				display: block;
+			    background: #ff5842;
+			    padding: 10px 30px;
+			    width: 150px;
+			    font-size: 16px;
+			    color: #fff;
+			    text-align: center;
+			    margin-top: 15px;
+			    text-shadow: 0px 0px 3px #d71d04;
+			    margin-bottom: 10px;
+			    text-decoration:none;
+			}
+			.img li .right>a:hover{
+				box-shadow: 0 0 8px #999999;
+			}
+			.img li img {
+				display: block;
+			    float: left;
+			    margin-right: 5px;
+			    margin-left: 45px;
+			    width: 210px;
+			    height: 170px;
+			}
+			.btn span {
+				display: block;
+				width: 40px;
+				height: 170px;
+				background: #e5e5e5;
+				text-align: center;
+			    color: #999;
+				font-size: 40px;
+				line-height: 100px;
+				cursor: pointer;
+				font-family: simhei;
+			    font-weight: bold;
+			    transition: all .5s ease;
+			}
+			.btn span:hover{
+				font-size: 42px;
+    			color: #f60;
+			}
+			.btn .prev {
+				font-size: 32px;
+			    bottom: 0px;
+			    position: absolute;
+			    z-index: 1;
+			    line-height: 170px;
+			}
+			
+			.btn .next {
+				position: absolute;
+				right: 0;
+				font-size: 32px;
+			    bottom: 0px;
+			    position: absolute;
+			    z-index: 1;
+			    line-height: 170px;
+			}
+			
+			.num .active {
+				background-color: #fff;
+			}
+			
+			.hide {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="banner">
+			<ul class="img">
+				<li>
+					<a href="#" target="blank"><img src="images/tu1.jpg" width="268" height="173" /></a>
+					<div class="right">
+						<h4><a href="#">校企合作共建电竞学院，中竞教育推动电竞行业健康发展</a></h4>
+						<p>2017年06月19日</p>
+						<p>2017年6月16日，中竞（浙江）教育科技有限公司（以下简称中竞教育）与合肥共达职业技术学院在合肥举行战略合作签约仪式暨揭牌仪式，双方将共建电竞学院。中竞教育董事长陈芳、合肥共达职业技术学院院长许本利等领导出席签约仪式。</p>
+						<a href="#">查看详情 >></a>
+					</div>
+				</li>
+				<li>
+					<a href="#" target="blank"><img src="images/tu2.jpg" width="268" height="173" /></a>
+					<div class="right">
+						<h4><a href="#">强强联手！电魂年度巨制《净界之涤》全面上线英雄VR Omni游戏平台</a></h4>
+						<p>2017年04月20日</p>
+						<p>近日，电魂网络携其年度VR大作《净界之涤》，正式登录国内超人气VR游戏平台——英雄VR Omni，堪称广大VR游戏玩家福音！</p>
+						<a href="#">查看详情 >></a>
+					</div>
+				</li>
+				<li>
+					<a href="#" target="blank"><img src="images/tu3.jpg" width="268" height="173" /></a>
+					<div class="right">
+						<h4><a href="#">【重磅】电魂网络、梦三国入选浙江省著名商标和名牌产品</a></h4>
+						<p>2017年01月05日</p>
+						<p>经浙江省工商行政管理局和浙江省质量技术监督局认定,电魂网络和旗下梦三国产品分别入选</p>
+						<a href="#">查看详情 >></a>
+					</div>
+				</li>
+				<li>
+					<a href="#" target="blank"><img src="images/tu4.jpg" width="268" height="173" /></a>
+					<div class="right">
+						<h4><a href="#">电魂网络受邀参加2016图形图像融合与人机交互论坛</a></h4>
+						<p>2017年01月03日</p>
+						<p>2016年12月30日，电魂旗下的勺子网络游戏制作人胡旭超受邀参加2016图形图像融合与人机交互论坛活动，分享电魂网络在VR游戏领域的相关经验。</p>
+						<a href="#">查看详情 >></a>
+					</div>
+				</li>
+			</ul>
+			<div class="btn">
+				<span class="prev"><</span>
+				<span class="next">></span>
+			</div>
+		</div>
+
+		<script>
+			$(function() {
+				var i = 0;
+				var timer;
+				var firstimg = $('.img li').first().clone(); //复制第一张图片
+				$('.img').append(firstimg).width($('.img li').length * ($('.img li').width())); //将第一张图片放到最后一张图片后，设置ul的宽度为图片张数*图片宽度
+				$('.des').width($('.img li').length * ($('.img li').width()));
+
+				// 下一个按钮
+				$('.next').click(function() {
+					i++;
+					if(i == $('.img li').length) {
+						i = 1; //这里不是i=0
+						$('.img').css({
+							left: 0
+						}); //保证无缝轮播，设置left值
+					};
+
+					$('.img').stop().animate({
+						left: -i * 1200
+					}, 300);
+				})
+				// 上一个按钮
+				$('.prev').click(function() {
+					i--;
+					if(i == -1) {
+						i = $('.img li').length - 2;
+						$('.img').css({
+							left: -($('.img li').length - 1) * 1200
+						});
+					}
+					$('.img').stop().animate({
+						left: -i * 1200
+					}, 300);
+					$('.num li').eq(i).addClass('active').siblings().removeClass('active');
+					$('.des li').eq(i).removeClass('hide').siblings().addClass('hide');
+				})
+			})
+		</script>
+
+	</body>
+
+</html>

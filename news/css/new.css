@@ -1,0 +1,250 @@
+body{
+	background:#fafaf9;
+}
+
+/********************************comman 结束******************************/
+/********************************banner 结束******************************/
+.banner{
+	width:1200px;
+	margin:0 auto;
+	padding-top:30px;
+}
+.banner .left{
+	width:887px;
+	height:364px;
+	overflow:hidden;
+	float:left;
+}
+.banner .left .tab_con{
+	width:887px;
+	height:364px;
+	/*background:url(../images/banner1.jpg) no-repeat 0 0;*/
+	position:relative;
+}
+.banner .left #tabCon_1{
+	background:url(../images/banner1.jpg) no-repeat 0 0;
+}
+.banner .left #tabCon_2{
+	background:url(../images/banner2.jpg) no-repeat 0 0;
+}
+.banner .left #tabCon_3{
+	background:url(../images/banner3.jpg) no-repeat 0 0;
+}
+.banner .left #tabCon_4{
+	background:url(../images/banner4.jpg) no-repeat 0 0;
+	background-size:cover;
+}
+.banner .left p{
+	position: absolute;
+	bottom: 0px;
+	height: 60px;
+	padding: 10px;
+	width: 867px;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+	position:absolute;
+}
+.banner .left p span{
+	display: block;
+	color: #8e8e8e;
+	font-size: 14px;
+}
+.banner .right{
+	float:right;
+}
+.banner .right img{
+	float:left;
+	width: 72px;
+	height: 69px;
+	margin-right:8px;
+}
+.banner .right ul li{
+	width:293px;
+	padding: 10px;
+	height: 71px;
+	position: relative;
+	cursor: pointer;
+	z-index: 10;
+	background:#5b595a;
+}
+.banner .right ul li.active{
+	background: #f60;
+}
+.banner .right ul li p{
+	font-size: 16px;
+	color: #fff;
+}
+.banner .right ul li b{
+	font-size: 46px;
+	color: #f60;
+	position: absolute;
+	left: -15px;
+	top: 10px;
+	display: none;
+	z-index: 1;
+}
+.banner .right ul li.active b{
+	display:block;
+}
+/********************************banner 结束******************************/
+/********************************main 开始******************************/
+.main{
+	width:1200px;
+	margin:0 auto;
+	margin-top:30px;
+}
+.main #titleArr{
+	background: #ededed;
+	height: 36px;
+	padding: 5px 0px 0 20px;
+}
+.main #titleArr li{
+	color: #878787;
+	display: block;
+	width: 100px;
+	text-align: center;
+	height: 36px;
+	line-height: 36px;
+	float:left;
+	font-size:14px;
+	font-family:"microsoft yahei";
+	cursor:pointer;
+}
+.main #titleArr li.active{
+	background:#fafaf9;
+}
+.main #main_con ul li{
+	width: 100%;
+	border-bottom: 1px solid #d0d0d0;
+	padding: 20px 0px;
+	/*position:relative;*/
+}
+.main #main_con ul li img{
+	display:block;
+	float: left;
+	width: 200px;
+	height: 170px;
+}
+.main #main_con ul li .right{
+	float: right;
+	width: 980px;
+	font-family:"microsoft yahei";
+}
+.main #main_con ul li .right h3{
+	margin-top;5px;
+}
+.main #main_con ul li .right h3 a{
+	font-size: 20px;
+	color: #000;
+	transition:.5s;
+}
+.main #main_con ul li .right h3 a:hover{
+	color: #f60;
+}
+.main #main_con ul li .right small{
+	display:block;
+	height:22px;
+	line-height:22px;
+	color: #f60;
+	font-size: 12px;
+	padding: 5px 0;
+}
+.main #main_con ul li .right p{
+	font-size: 14px;
+	color: #000;
+	font-family:"microsoft yahei";
+}
+.main #main_con ul li .right .more{
+	float: left;
+	width: 150px;
+	background-color: #f60;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	padding: 10px 30px;
+	margin-top: 18px;
+	text-shadow: 0px 0px 3px #d71d04;
+	transition:.5s;
+}
+.main #main_con ul li .right .share{
+	float: right;
+	margin-top: 20px;
+	margin-right: 19px;
+	position:relative;
+}
+.main #main_con ul li .right .share span:first-of-type{
+	font-size: 14px;
+	display: inline-block;
+	height: 26px;
+	line-height:26px;
+	width: 85px;
+	position:absolute;
+	z-index: 3;
+	top:0;
+	right:0;
+	background:url(../images/images/link_03.jpg) no-repeat 50px center,#FAFAF9;
+	transition:all .5s ease-in;
+}
+.main #main_con ul li .right .share:hover span:first-of-type{
+	right:71px;
+}
+.main #main_con ul li .right .share span:nth-of-type(2) a{
+	display:inline-block;
+	width:21px;
+	height:20px;
+	margin-right:5px;
+}
+.main #main_con ul li .right .share span:nth-of-type(2) a:first-of-type{
+	background:url(../images/weibo.jpg) no-repeat center center;
+}
+.main #main_con ul li .right .share span:nth-of-type(2) a:nth-of-type(2){
+	background:url(../images/share.jpg) no-repeat center center;
+}
+.main #main_con ul li .right .share span:nth-of-type(2) a:first-of-type:hover{
+	background:url(../images/weibo2.jpg) no-repeat center center;
+}
+.main #main_con ul li .right .share span:nth-of-type(2) a:nth-of-type(2):hover{
+	background:url(../images/share2.jpg) no-repeat center center;
+}
+.main #main_con ul li .right .more:hover{
+	box-shadow:0 0 8px #666666;
+}
+.main #main_con ul li .right .more:hover{
+	box-shadow:0 0 8px #666666;
+}
+.main #main_con ul:nth-of-type(2),
+.main #main_con ul:nth-of-type(3){
+	display:none;
+}
+.main .pagination-box{
+	padding: 20px 0;
+	float:right;
+}
+.main .pagination-box ul li{
+    display: block;
+    color: #fff;
+    float: left;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    margin: 0 1px;
+    background-color: #f60;
+}
+.main .pagination-box ul li a{
+	color:#fff;
+	font-size:18px;
+}
+.main .pagination-box ul li .num{
+	font-size:12px;
+}
+.main .pagination-box ul .select{
+	background-color:transparent;
+}
+.main .pagination-box ul .select a{
+	color: #f60;
+}
+
+/********************************main 结束******************************/

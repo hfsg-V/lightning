@@ -1,0 +1,297 @@
+body{
+	background:#fafaf9;
+}
+/********************************sub_nav 结束******************************/
+#nav2{
+	width:100%;
+	background:#ff7d05;
+	border:0;
+	min-height:45px !important;
+	margin-bottom:0;
+	z-index:111111111111111;
+}
+#nav2 ul li:hover a{
+	background:#ce550b;
+}
+#nav2 ul .active a{
+	background:#ce550b;
+}
+#nav2 .nav_con{
+	width:1200px;
+	margin:0 auto;
+}
+#nav2 .nav_con ul li a{
+	display:inline-block;
+	float:left;
+	height:45px;
+	line-height:45px;
+	padding:0px 30px;
+	font-size: 14px;
+	color:#fff;
+	border-radius:0;
+}
+.fix{
+	position:fixed !important;
+	top:0 !important;
+	left:0 !important;
+}
+/********************************sub_nav 结束******************************/
+/********************************banner 开始******************************/
+.banner{
+	width:100%;
+	height:320px;
+	background:url(../images/social_banner.jpg) no-repeat center center;
+	background-size:cover;
+}
+/********************************banner 结束******************************/
+/********************************social_box 开始******************************/
+.social_box{
+	width:1200px;
+	margin:0 auto;
+	padding-top:30px;
+}
+.social_box h3{
+	color: #1a1b1c;
+	font-size: 22px;
+	font-weight: 400;
+	border-bottom: solid 3px #808080;
+	padding-bottom: 10px;
+}
+.social_box ul{
+	background-color: #e7e7e7;
+	padding: 15px 20px 5px;
+	margin-top: 28px;
+}
+.social_box ul li{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+.social_box ul li a,.main ul li:first-of-type{
+	display:block;
+	padding: 2px 10px;
+	color: #1a1b1c;
+	font-size: 14px;
+}
+.social_box ul li:first-of-type{
+	margin:0;
+	padding-top:2px;
+}
+table{
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+.social_box #tab_con table tr th{
+	height: 40px;
+	line-height: 40px;
+	color: #1a1b1c;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: left;
+}
+.social_box #tab_con table tr{
+	border: solid 1px #e7e7e7;
+	border-top: 0;
+	background-color: #fff;
+	padding: 0 18px;
+	cursor: pointer;
+}
+.social_box #tab_con table tr td{
+	height: 60px;
+	line-height: 60px;
+	color: #4c4c4c;
+	font-size: 14px;
+	box-sizing: content-box;
+}
+.social_box #tab_con table tr th:nth-of-type(1){
+	background:url(../images/sort_both.png) no-repeat 285px center,#FAFAF9;
+}
+.social_box #tab_con table tr th:nth-of-type(2){
+	background:url(../images/sort_both.png) no-repeat 120px center,#FAFAF9;
+}
+.social_box #tab_con table tr th:nth-of-type(3){
+	background:url(../images/sort_both.png) no-repeat 138px center,#FAFAF9;
+}
+.social_box #tab_con table tr th:nth-of-type(4){
+	background:url(../images/sort_both.png) no-repeat 135px center,#FAFAF9;
+}
+.social_box #tab_con table tr th:nth-of-type(5){
+	background:url(../images/sort_both.png) no-repeat 141px center,#FAFAF9;
+}
+.social_box #tab_con table tr th:nth-of-type(6){
+	background:url(../images/sort_both.png) no-repeat 125px center,#FAFAF9;
+}
+.w317{
+	padding-left:18px;
+	width:299px;
+}
+.w152{
+	width:152px;
+	text-align: left;
+}
+.w169{
+	width:169px;
+}
+.w208{
+	width:208px;
+}
+.wl44{
+	width:144px;
+}
+.social_box #tab_con table tr:hover{
+	background:#fef1e6 !important;
+}
+.social_box .main_con ul li a.active{
+	background-color: #ff7d05;
+	color: #fff;
+}
+.showAndHide{
+	display:none;
+}
+.social_box .showAndHide .profile{
+	position:relative;
+	display:block;
+	background-color: #fef1e6;
+	padding: 10px 18px;
+}
+.social_box .showAndHide .profile h5{
+	color: #ff7d05;
+	font-size: 14px;
+	padding-top: 20px;
+}
+.social_box .showAndHide .profile .intro{
+	display:block;
+	font: 14px 微软雅黑,Arial, Helvetica, sans-serif;
+	color: #333;
+}
+.social_box .showAndHide .resume-btn{
+	position: absolute;
+	right: 10px;
+	bottom: 30px;
+	display: block;
+	width: 178px;
+	height: 48px;
+	background-color: #f60;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 48px;
+}
+.social_box .page-box{
+	padding:23px 0 100px 0;
+}
+.social_box .page-box a{
+	display:inline-block;
+	float:right;
+	margin-right:2px;
+	width:26px;
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	background:#ff6600;
+	color:#fff;
+	cursor:pointer;
+}
+.social_box .page-box a:nth-last-of-type(2){
+	background:#fff;
+	color:#ff6600;
+}
+/********************************social_box 结束******************************/
+/********************************modal 开始******************************/
+.modal{
+	display:none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999998;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.modal .modal_content{
+	margin: 0 auto;
+	margin-top:156px;
+	width:450px;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 5px;
+}
+.modal .modal_content .inner{
+	padding-bottom: 35px;
+	background-color: #f8f8f8;
+}
+.modal .modal_content .inner h3{
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	background-color: #f60;
+	color: #fff;
+	font-size: 16px;
+	padding-left: 15px;
+}
+.modal .modal_content .inner .body{
+	padding-top: 10px;
+}
+.modal .modal_content .inner h3 b{
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+	width: 16px;
+	height: 16px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+	font-style: normal;
+	cursor: pointer;
+}
+.modal .modal_content .inner .body p{
+	width:100%;
+	margin-top:15px;
+	font: 12px/22px 微软雅黑,Arial, Helvetica, sans-serif;
+	color: #333;
+
+}
+.modal .modal_content .inner .body p label{
+	float: left;
+	width: 120px;
+	height: 30px;
+	text-align: right;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #666;
+	padding-right: 5px;
+}
+.modal .modal_content .inner .body p input{
+	width: 220px;
+	line-height: 28px;
+	border: solid 1px #e7e7e7;
+	background-color: #fef1e6;
+	padding: 0 5px;
+}
+.modal .modal_content .inner .body .hand_btn{
+	display:block;
+	width: 130px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #f60;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	margin: 30px auto 0;
+	cursor: pointer;
+	outline:none;
+	border:0;
+}
+.concent{
+	position: fixed;
+	z-index: 9;
+	right: 0;
+	top: 28%;
+	width: 180px;
+}
+/********************************modal 结束******************************/

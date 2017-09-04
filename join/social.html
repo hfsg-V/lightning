@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/social.css" />
+		<link rel="stylesheet" type="text/css" href="../comman/comman.css" />
+		<script src="scripts/jquery-1.3.1.js" type="text/javascript"></script>
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../comman/comman.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/social.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validate.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		  $(document).ready(function(){
+			$("#commentForm").validate({
+				rules: {
+					username: {
+						required: true,
+						minlength:2
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					phoneNum: {
+						required: true,
+						minlength:11
+					},
+					comment: "required",
+					check_num:"required"
+				},
+				
+				messages: {
+					username: {
+						required: '姓名必填',
+						minlength: '至少输入2个字符'
+					},
+					phoneNum: {
+						required: '手机号必填',
+						minlength: '格式不正确'
+					},
+					email: {
+						required: '邮箱必填',
+						email: '格式不正确'
+					},
+					comment: '请选择文件',
+					check_num:'请输入验证码'
+				},	
+				
+				errorElement: "em", //可以用其他标签，记住把样式也对应修改
+				success: function(label) {
+					//label指向上面那个错误提示信息标签
+					label.text("格式正确")				//清空错误提示消息
+					.addClass("success");	//加上自定义的success类
+				}
+			  });
+		  });
+		</script>
+	</head>
+
+	<body>
+		<!---------------------------------header 开始----------------------->
+		<header class="clearfix">
+			<div class="head">
+				<h2 class="left">
+					<a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="" /></a>
+				</h2>
+				<nav class="right">
+					<div id="nav" class="nav-side">
+						<div id="nav-div">
+							<ul>
+								<li>
+									<a href="../index.html">官网首页</a>
+								</li>
+								<li>
+									<a href="../about/about.html">关于电魂</a>
+								</li>
+								<li>
+									<a href="../news/new.html">电魂咨询</a>
+								</li>
+								<li>
+									<a href="../products/products.html">电魂产品</a>
+								</li>
+								<li>
+									<a href="partenr.html">商务合作</a>
+								</li>
+								<li>
+									<a href="../graceful/graceful.html">电魂风采</a>
+								</li>
+								<li class="on">
+									<a href="../join/social.html">加入电魂</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<a href="../English/index.html" class="English"><img src="../images/English.jpg" alt=""/></a>
+			</div>
+		</header>
+		<nav id="nav2">
+			<div class="nav_con">
+				<ul class="nav nav-pills navbar-nav">
+					<li class="active">
+						<a href="social.html">社会招聘</a>
+					</li>
+					<li>
+						<a href="school.html">校园招聘</a>
+					</li>
+					<li>
+						<a href="weal.html">电魂福利</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!---------------------------------header 结束----------------------->
+		<!---------------------------------banner 开始----------------------->
+		<section class="banner wow bounceIn"></section>
+		<!---------------------------------banner 结束----------------------->
+		<div class="concent"><img src="images/tu_03.jpg" alt="" /></div>
+		<!---------------------------------main 开始----------------------->
+		<section class="social_box">
+			<div class="main_con">
+				<h3>社会职位</h3>
+				<ul class="clearfix">
+					<li>类别：</li>
+					<li>
+						<a href="javascript:changeTab('1')" id="tab1" class="active">全部</a>
+					</li>
+					<li>
+						<a href="javascript:changeTab('2')" id="tab2">技术类</a>
+					</li>
+					<li>
+						<a href="javascript:changeTab('3')" id="tab3">策划类</a>
+					</li>
+					<li>
+						<a href="javascript:changeTab('4')" id="tab4">设计类</a>
+					</li>
+					<li>
+						<a href="javascript:changeTab('5')" id="tab5">职能类</a>
+					</li>
+					<li>
+						<a href="javascript:changeTab('6')" id="tab6">产品类</a>
+					</li>
+					<li>
+						<a href="javascript:changeTab('7')" id="tab7">市场类</a>
+					</li>
+				</ul>
+				<div id="tab_con">
+					<div id="tabCon_1">
+						<table border="0" cellspacing="0" cellpadding="0" class="resume-box-box">
+							<tr>
+								<th class="w317">职位名称</th>
+								<th class="w152">职位类别</th>
+								<th class="w169">工作地点</th>
+								<th class="w208">招聘人数</th>
+								<th class="w208">发布时间</th>
+								<th class="wl44"></th>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">渠道投放经理 <img src="images/new.gif" alt=""></td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-09-19</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="60" role="row" class="even">
+								<td class="w317">运维工程师 <img src="images/new.gif" alt=""></td>
+								<td class="w152">技术类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-09-14</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert()" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="36" role="row" class="even">
+								<td class="w317">游戏UI设计师 <img src="images/new.gif" alt=""></td>
+								<td class="w152">设计类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">3</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="39" role="row" class="even">
+								<td class="w317">场景原画设计师 <img src="images/new.gif" alt=""></td>
+								<td class="w152">设计类</td>
+								<td class="w169"></td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="40" role="row" class="even">
+								<td class="w317">角色原画设计师 <img src="images/new.gif" alt=""></td>
+								<td class="w152">设计类</td>
+								<td class="w169"></td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="50" role="row" class="even">
+								<td class="w317">海外运营经理 <img src="images/new.gif" alt=""></td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="68" role="row" class="even">
+								<td class="w317">主办会计 <img src="images/new.gif" alt=""></td>
+								<td class="w152">职能类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="74" role="row" class="even">
+								<td class="w317">市场策划 <img src="images/new.gif" alt=""></td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="91" role="row" class="even">
+								<td class="w317">出纳员（上海&amp;杭州） <img src="images/new.gif" alt=""></td>
+								<td class="w152">职能类</td>
+								<td class="w169">上海</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="92" role="row" class="even">
+								<td class="w317"> 海外运营（韩语） <img src="images/new.gif" alt=""></td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">2</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div id="tabCon_2">
+						<table border="0" cellspacing="0" cellpadding="0" class="resume-box-box">
+							<tr>
+								<th class="w317">职位名称</th>
+								<th class="w152">职位类别</th>
+								<th class="w169">工作地点</th>
+								<th class="w208">招聘人数</th>
+								<th class="w208">发布时间</th>
+								<th class="wl44"></th>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">运维工程师  <img src="images/new.gif" alt=""></td>
+								<td class="w152">技术类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-09-14</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="60" role="row" class="even">
+								<td class="w317">移动SDK开发 <img src="images/new.gif" alt=""></td>
+								<td class="w152">技术类</td>
+								<td class="w169"center">杭州</td>
+								<td class="w208"center">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="36" role="row" class="even">
+								<td class="w317">资深游戏UI设计师 <img src="images/new.gif" alt=""></td>
+								<td class="w152">设计类</td>
+								<td class="w169">上海</td>
+								<td class="w208">3</td>
+								<td class="w208">2016-09-01</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="39" role="row" class="even">
+								<td class="w317">游戏客户端开发工程师  <img src="images/new.gif" alt=""></td>
+								<td class="w152">技术类</td>
+								<td class="w169"></td>
+								<td class="w208">3</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="40" role="row" class="even">
+								<td class="w317">前端开发工程师 <img src="images/new.gif" alt=""></td>
+								<td class="w152">技术类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">2</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="50" role="row" class="even">
+								<td class="w317">文案策划  <img src="images/new.gif" alt=""></td>
+								<td class="w152">技术类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">2</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="68" role="row" class="even">
+								<td class="w317">客户端开发工程师  <img src="images/new.gif" alt=""></td>
+								<td class="w152">技术类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">5</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="74" role="row" class="even">
+								<td class="w317">引擎开发工程师  <img src="images/new.gif" alt=""></td>
+								<td class="w152">技术类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="91" role="row" class="even">
+								<td class="w317">美宣设计师</td>
+								<td class="w152">技术类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="92" role="row" class="even">
+								<td class="w317">程序主管</td>
+								<td class="w152">技术类</td>
+								<td class="w169"></td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div id="tabCon_3">
+						<table border="0" cellspacing="0" cellpadding="0" class="resume-box-box">
+							<tr>
+								<th class="w317">职位名称</th>
+								<th class="w152">职位类别</th>
+								<th class="w169">工作地点</th>
+								<th class="w208">招聘人数</th>
+								<th class="w208">发布时间</th>
+								<th class="wl44"></th>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">关卡策划</td>
+								<td class="w152">策划类</td>
+								<td class="w169"></td>
+								<td class="w208">2</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">关卡策划</td>
+								<td class="w152">策划类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">3</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div id="tabCon_4">
+						<table border="0" cellspacing="0" cellpadding="0" class="resume-box-box">
+							<tr>
+								<th class="w317">职位名称</th>
+								<th class="w152">职位类别</th>
+								<th class="w169">工作地点</th>
+								<th class="w208">招聘人数</th>
+								<th class="w208">发布时间</th>
+								<th class="wl44"></th>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">游戏UI设计师 <img src="images/new.gif" alt=""></td>
+								<td class="w152">设计类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">3</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">场景原画设计师 <img src="images/new.gif" alt=""> </td>
+								<td class="w152">设计类</td>
+								<td class="w169"></td>
+								<td class="w208">3</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">角色原画设计师 <img src="images/new.gif" alt=""> </td>
+								<td class="w152">设计类</td>
+								<td class="w169"></td>
+								<td class="w208">2</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">3D场景建模设计师</td>
+								<td class="w152">设计类</td>
+								<td class="w169"></td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">3D角色建模设计师 </td>
+								<td class="w152">设计类</td>
+								<td class="w169"></td>
+								<td class="w208">2</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">场景模型师</td>
+								<td class="w152">设计类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">角色原画设计师</td>
+								<td class="w152">设计类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">场景原画师 </td>
+								<td class="w152">设计类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">资深技术美术（TA） </td>
+								<td class="w152">设计类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">资深场景原画师 </td>
+								<td class="w152">设计类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">2</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div id="tabCon_5">
+						<table border="0" cellspacing="0" cellpadding="0" class="resume-box-box">
+							<tr>
+								<th class="w317">职位名称</th>
+								<th class="w152">职位类别</th>
+								<th class="w169">工作地点</th>
+								<th class="w208">招聘人数</th>
+								<th class="w208">发布时间</th>
+								<th class="wl44"></th>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">主办会计 <img src="images/new.gif" alt=""></td>
+								<td class="w152">职能类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">出纳员（上海&杭州）<img src="images/new.gif" alt=""> </td>
+								<td class="w152">职能类</td>
+								<td class="w169">上海</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">总经理助理 </td>
+								<td class="w152">职能类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">游戏客服专员 </td>
+								<td class="w152">职能类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">6</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">行政司机</td>
+								<td class="w152">职能类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">投资经理</td>
+								<td class="w152">职能类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">法务主管</td>
+								<td class="w152">职能类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div id="tabCon_6">
+						<table border="0" cellspacing="0" cellpadding="0" class="resume-box-box">
+							<tr>
+								<th class="w317">职位名称</th>
+								<th class="w152">职位类别</th>
+								<th class="w169">工作地点</th>
+								<th class="w208">招聘人数</th>
+								<th class="w208">发布时间</th>
+								<th class="wl44"></th>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">产品经理 </td>
+								<td class="w152">产品类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">2</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">产品运营（营销方向） </td>
+								<td class="w152">产品类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">游戏运营（手游）</td>
+								<td class="w152">产品类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div id="tabCon_7">
+						<table border="0" cellspacing="0" cellpadding="0" class="resume-box-box">
+							<tr>
+								<th class="w317">职位名称</th>
+								<th class="w152">职位类别</th>
+								<th class="w169">工作地点</th>
+								<th class="w208">招聘人数</th>
+								<th class="w208">发布时间</th>
+								<th class="wl44"></th>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">渠道投放经理  <img src="images/new.gif" alt=""></td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">海外运营经理 <img src="images/new.gif" alt=""> </td>
+								<td class="w152">市场类</td>
+								<td class="w169">上海</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">市场策划 </td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">海外运营（韩语） </td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">6</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">商务经理</td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">品牌策划</td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">品牌总监</td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">赛事运营 </td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-id="141" role="row" class="even">
+								<td class="w317">facebook广告投放 </td>
+								<td class="w152">市场类</td>
+								<td class="w169">杭州</td>
+								<td class="w208">1</td>
+								<td class="w208">2016-08-29</td>
+								<td class="wl44">
+									<p class="arrow"></p>
+								</td>
+							</tr>
+							<tr class="showAndHide">
+								<td colspan="6">
+									<div class="profile">
+										<h5>岗位职责：</h5>
+										<div class="intro">
+											1、电魂旗下端游、手游、页游以及电魂平台用户投放买量，包括媒体广告投放、渠道买量投放等；<br /> 
+											2、根据各媒体、渠道的特点，跟进投放素材与排期，保障完整的投放推广；<br />
+											3、分析及不断优化买量广告的效果，对KPI负责；<br />
+											4、不断扩大和维护媒体、渠道资源，维护广告投放客户关系； 
+										 </div>
+										 <h5>任职要求：</h5>
+										 <div class="intro">
+										 	1、本科以上学历； <br />
+											2、2年以上游戏产品媒体、渠道投放买量经验；<br />
+											3、熟悉互联网买量渠道建立、运营及合作；<br />
+											4、优秀的沟通能力以及广告敏感性； <br />
+											5、富有激情和乐于接受挑战，操作过千万级别游戏投放买量经验优先。
+										 </div>
+										 <a href="javascript:modalAlert();" class="resume-btn">投递简历</a>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="page-box">
+					<div class="clearfix">
+						<a>></a>
+						<a>5</a>
+						<a>4</a>
+						<a>3</a>
+						<a>2</a>
+						<a>1</a>
+						<a><</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!---------------------------------main 结束----------------------->
+		<!---------------------------------footer 开始----------------------->
+		<footer>
+			<div class="footer clearfix">
+				<div class="left">
+					<img src="../images/dh-logo-black.png" />
+				</div>
+				<div class="right">
+					<p>杭州电魂网络科技股份有限公司版权所有丨2008-2017 Electronic Soul - All Rights Reserved<br /> 增值电信业务经营许可证：浙B2-20090296 网络文化经营许可证：浙网文【2012】0804-079号<br /> 互联网出版许可证编号：新出网证（浙）45号
+						<img src="../images/ban.png" alt="" />
+						<a href="#"> 浙公网安备 33010802004869号</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!---------------------------------footer 结束----------------------->
+		<!---------------------------------modal 开始----------------------->
+		<div class="modal"  id="alertKuang">
+			<div class="modal_content">
+				<div class="inner">
+					<div class="header">
+						<h3>投递简历<b onclick="closeAlert()">X</b></h3>
+					</div>
+					<div class="body">
+						<form action="" method="post" class="cmxform" id="commentForm">
+							<p class="clearfix">
+								<label>姓名：</label>
+								<input type="text" name="username" />
+							</p>
+							<p class="clearfix">
+								<label>手机：</label>
+								<input type="text" name="phoneNum" />
+							</p>
+							<p class="clearfix">
+								<label>邮箱：</label>
+								<input type="text" name="email" />
+							</p>
+							<p class="clearfix">
+								<label>上传简历：</label>
+								<input type="file" name="comment" />
+							</p>
+							<p><label></label>请上传pdf、doc、docx、zip、rar 格式的文件！</p>
+							<p class="clearfix">
+								<label>验证码：</label>
+								<input type="text" name="check_num" />
+							</p>
+							<input type="submit" value="发送简历" class="hand_btn submit" onclick="modal()" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---------------------------------modal 结束----------------------->
+		<script type="text/javascript">
+//		---------------------------------modal开始----------------------->
+			var modal=document.getElementById("alertKuang");
+			function modalAlert(){
+				modal.style.display="block";
+			}
+			function closeAlert(){
+				modal.style.display="none";
+			}
+//		---------------------------------职位简介开始----------------------->	
+			$(document).ready(function(){
+				$(".even").click(function(){
+					if($(this).next().is(":visible")){
+						$(".showAndHide").hide()
+						$(".even").css("background","#fff")
+						$(this).css("background","#fff").next().hide()
+					}else{
+						$(".showAndHide").hide()
+						$(".even").css("background","#fff")
+						$(this).css("background","#fef1e6").next().show(100)
+					}
+				})
+			})
+		</script>
+	</body>
+
+</html>

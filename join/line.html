@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/line.css" />
+		<link rel="stylesheet" type="text/css" href="../comman/comman.css" />
+		<script src="scripts/jquery-1.3.1.js" type="text/javascript"></script>
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../comman/comman.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validate.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		  $(document).ready(function(){
+			$("#commentForm").validate({
+				rules: {
+					username: {
+						required: true,
+						minlength:2
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					phoneNum: {
+						required: true,
+						minlength:11
+					},
+					comment: "required",
+					check_num:"required"
+				},
+				
+				messages: {
+					username: {
+						required: '姓名必填',
+						minlength: '至少输入2个字符'
+					},
+					phoneNum: {
+						required: '手机号必填',
+						minlength: '格式不正确'
+					},
+					email: {
+						required: '邮箱必填',
+						email: '格式不正确'
+					},
+					comment: '请选择文件',
+					check_num:'请输入验证码'
+				},	
+				
+				errorElement: "em", //可以用其他标签，记住把样式也对应修改
+				success: function(label) {
+					//label指向上面那个错误提示信息标签
+					label.text("格式正确")				//清空错误提示消息
+					.addClass("success");	//加上自定义的success类
+				}
+			  });
+		  });
+		</script>
+	</head>
+
+	<body>
+		<!---------------------------------header 开始----------------------->
+		<header class="clearfix">
+			<div class="head">
+				<h2 class="left">
+					<a href="../index.html" class="logo"><img src="../images/logo.jpg" alt="" /></a>
+				</h2>
+				<nav class="right">
+					<div id="nav" class="nav-side">
+						<div id="nav-div">
+							<ul>
+								<li>
+									<a href="../index.html">官网首页</a>
+								</li>
+								<li>
+									<a href="../about/about.html">关于电魂</a>
+								</li>
+								<li>
+									<a href="../news/new.html">电魂咨询</a>
+								</li>
+								<li>
+									<a href="../products/products.html">电魂产品</a>
+								</li>
+								<li>
+									<a href="partenr.html">商务合作</a>
+								</li>
+								<li>
+									<a href="../graceful/graceful.html">电魂风采</a>
+								</li>
+								<li class="on">
+									<a href="../join/social.html">加入电魂</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<a href="../English/index.html" class="English"><img src="../images/English.jpg" alt=""/></a>
+			</div>
+		</header>
+		<nav id="nav2">
+			<div class="nav_con">
+				<ul class="nav nav-pills navbar-nav">
+					<li>
+						<a href="social.html">社会招聘</a>
+					</li>
+					<li class="active">
+						<a href="school.html">校园招聘</a>
+					</li>
+					<li>
+						<a href="weal.html">电魂福利</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!---------------------------------header 结束----------------------->
+		<!---------------------------------banner 开始----------------------->
+		<section class="banner"></section>
+		<!---------------------------------banner 结束----------------------->
+		<div class="concent"><img src="images/tu_03.jpg"/></div>
+		<!---------------------------------main 开始----------------------->
+		<section class="social_box clearfix">
+			<div class="left_con">
+				<ul>
+					<li><a href="school.html">校招职位</a></li>
+					<li><a href="line.html">宣讲路线</a></li>
+					<li><a href="notice.html">最新公告</a></li>
+				</ul>
+			</div>
+			<div class="right_con">
+				<h3>宣讲路线</h3>
+				<div class="selTitle clearfix">
+					<span>选择城市：</span>
+					<div class="selector" id="sel_box">
+						<p id="selected">全国</p>
+						<ul id="selectMenu">
+							<li>全国</li>
+							<li>将军路校区、三牌楼校区</li>
+							<li>屯溪路校区</li>
+							<li>杭州</li>
+						</ul>
+					</div>
+					<p class="tips">以下宣讲路线信息将适时更新，请持续关注!</p>
+				</div>
+				<table class="data_table" id="form0" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td class="tl">
+								<img src="images/tu1.png" width="80" />
+								杭州电子科技大学（宣讲会）
+							</td>
+							<td>
+								宣讲地址：第7教研楼南127 宣讲时间：10月14日 13:30<br/> 笔试地址：第7教研楼南127 笔试时间：宣讲会后 </td>
+							<td width="100">杭州</td>
+						</tr>
+						<tr>
+							<td class="tl">
+								<img src="images/tu2.png" width="80" /> 浙江大学（屏峰校区，招聘会）
+							</td>
+							<td>
+								宣讲地址：屏峰校区 宣讲时间：9月22日 （周四）<br/> 笔试地址：待定 笔试时间：10月14日 18:30 </td>
+							<td width="100">杭州</td>
+						</tr>
+						<tr>
+							<td class="tl">
+								<img src="images/tu3.jpg" width="80" /> 浙江大学（招聘会）
+							</td>
+							<td>
+								宣讲地址：地点待定 宣讲时间：10月29日 （具体时间待定）<br/> 笔试地址：待定 笔试时间：待定 </td>
+							<td width="100">杭州</td>
+						</tr>
+						<tr>
+							<td class="tl">
+								<img src="images/tu4.jpg" width="80" /> 南京邮电大学（招聘会）
+							</td>
+							<td>
+								宣讲地址： 宣讲时间：10月9-13日<br/> 笔试地址： 笔试时间： </td>
+							<td width="100">将军路校区、三牌楼校区</td>
+						</tr>
+						<tr>
+							<td class="tl">
+								<img src="images/tu5.jpg" width="80" /> 合肥工业大学（招聘会）
+							</td>
+							<td>
+								宣讲地址：待定 宣讲时间：10月9-13日<br/> 笔试地址：待定 笔试时间：待定 </td>
+							<td width="100">屯溪路校区</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="data_table" id="form1" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+					<tr>
+						<td class="tl">
+							<img src="images/tu2.png" width="80" /> 浙江大学（屏峰校区，招聘会）
+						</td>
+						<td>
+							宣讲地址：屏峰校区 宣讲时间：9月22日 （周四）<br/> 笔试地址：待定 笔试时间：10月14日 18:30 </td>
+						<td width="100">杭州</td>
+					</tr>
+					<tr>
+						<td class="tl">
+							<img src="images/tu3.jpg" width="80" /> 浙江大学（招聘会）
+						</td>
+						<td>
+							宣讲地址：地点待定 宣讲时间：10月29日 （具体时间待定）<br/> 笔试地址：待定 笔试时间：待定 </td>
+						<td width="100">杭州</td>
+					</tr>
+					</tbody>
+				</table>
+				<table class="data_table" id="form2" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+					<tr>
+					<tr>
+						<td class="tl">
+							<img src="images/tu3.jpg" width="80" /> 浙江大学（屏峰校区，招聘会）
+						</td>
+						<td>
+							宣讲地址：屏峰校区 宣讲时间：9月22日 （周四）<br/> 笔试地址：待定 笔试时间：10月14日 18:30 </td>
+						<td width="100">杭州</td>
+					</tr>
+					<tr>
+						<td class="tl">
+							<img src="images/tu4.jpg" width="80" /> 浙江大学（招聘会）
+						</td>
+						<td>
+							宣讲地址：地点待定 宣讲时间：10月29日 （具体时间待定）<br/> 笔试地址：待定 笔试时间：待定 </td>
+						<td width="100">杭州</td>
+					</tr>
+					</tr>
+					</tbody>
+				</table>
+				<table class="data_table" id="form3" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+					<tr>
+					<tr>
+						<td class="tl">
+							<img src="images/tu5.jpg" width="80" /> 浙江大学（屏峰校区，招聘会）
+						</td>
+						<td>
+							宣讲地址：屏峰校区 宣讲时间：9月22日 （周四）<br/> 笔试地址：待定 笔试时间：10月14日 18:30 </td>
+						<td width="100">杭州</td>
+					</tr>
+					<tr>
+						<td class="tl">
+							<img src="images/tu3.jpg" width="80" /> 浙江大学（招聘会）
+						</td>
+						<td>
+							宣讲地址：地点待定 宣讲时间：10月29日 （具体时间待定）<br/> 笔试地址：待定 笔试时间：待定 </td>
+						<td width="100">杭州</td>
+					</tr>
+					</tr>
+					</tbody>
+				</table>
+				<div class="page-box">
+					<div class="clearfix">
+						<a>></a>
+						<a>1</a>
+						<a><</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!---------------------------------main 结束----------------------->
+		<!---------------------------------footer 开始----------------------->
+		<footer>
+			<div class="footer clearfix">
+				<div class="left">
+					<img src="../images/dh-logo-black.png" />
+				</div>
+				<div class="right">
+					<p>杭州电魂网络科技股份有限公司版权所有丨2008-2017 Electronic Soul - All Rights Reserved<br /> 增值电信业务经营许可证：浙B2-20090296 网络文化经营许可证：浙网文【2012】0804-079号<br /> 互联网出版许可证编号：新出网证（浙）45号
+						<img src="../images/ban.png" alt="" />
+						<a href="#"> 浙公网安备 33010802004869号</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!---------------------------------footer 结束----------------------->
+	</body>
+</html>
+<script type="text/javascript">
+	//  ——————————————————————————fix固定导航出现/消失
+	function getScrollTop() {
+		var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+		return scrollTop;
+	}
+	window.onload = function() {
+		var menu = document.getElementById("nav2");
+		window.onscroll = function() {
+			if(getScrollTop() > 104) {
+				menu.className = "fix";
+			} else {
+				menu.className = " ";
+			}
+		}
+		$("table").css("display","none");
+		$("#form0").css("display","block");
+	}
+	//-------------------------------------------	模拟下拉菜单
+	$(function(){
+		$("#sel_box").mouseover(function(){
+			$(this).children("ul").show()
+			$("#selected").css({"border":"1px solid red","border-bottom":"0"})
+			$("#selectMenu").css({"border":"1px solid red","border-top":"0"})
+			$("#selectMenu").children("li").click(function(){
+				$("#selected").text($(this).text())
+				$("table").css("display","none");
+				$("#form"+$("#selectMenu").children("li").index($(this))).show();
+			})
+		})
+		$("#sel_box").mouseout(function(){
+			$("#selected").css("border","0")
+			$(this).children("ul").hide()
+		})
+	})
+
+</script>

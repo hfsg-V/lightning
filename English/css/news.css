@@ -1,0 +1,218 @@
+.grayscale {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	filter: gray
+}
+
+.grayscale.grayscale-fade {
+	transition: filter .5s
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.grayscale.grayscale-fade {
+		-webkit-transition: -webkit-filter .5s;
+		transition: -webkit-filter .5s
+	}
+}
+
+.grayscale.grayscale-fade:hover,
+.grayscale.grayscale-off {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0)
+}
+
+.grayscale.grayscale-replaced {
+	-webkit-filter: none;
+	filter: none
+}
+
+.grayscale.grayscale-replaced>svg {
+	-webkit-transition: opacity .5s ease;
+	transition: opacity .5s ease;
+	opacity: 1
+}
+
+.grayscale.grayscale-replaced.grayscale-fade:hover>svg,
+.grayscale.grayscale-replaced.grayscale-off>svg {
+	opacity: 0
+}
+.main .main-layout h3{
+	width: 508px;
+	background-image: url('../images/bg-main-title1.png');
+	height: 70px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin: 0 auto 50px;
+}
+.feature {
+	position: relative;
+}
+
+.feature-gallery {
+	position: relative;
+	z-index: 1;
+	height: 342px;
+	overflow: hidden;
+}
+
+.feature-gallery li {
+	position: absolute;
+	display: none;
+	font-size: 0;
+}
+
+.feature-prev,
+.feature-next {
+	position: absolute;
+	top: 106px;
+	z-index: 2;
+	width: 70px;
+	height: 22px;
+	background-image: url(../images/bg-btn1.png);
+	background-repeat: no-repeat;
+	-webkit-transition: width 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+	-moz-transition: width 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: width 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.feature-prev {
+	right: 710px;
+	background-position: left 0;
+}
+
+.feature-next {
+	left: 710px;
+	background-position: right -44px;
+}
+
+.feature-prev:hover,
+.feature-next:hover {
+	width: 80px;
+}
+
+.feature-prev:hover {
+	background-position: left -22px;
+}
+
+.feature-next:hover {
+	background-position: right -66px;
+}
+
+.main {
+	background: #121212 url('../images/bg-main.jpg') no-repeat 50% 0;
+}
+
+.main-layout {
+	width: 1010px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.main-layout:before,
+.main-layout:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.gallery {
+	width: 100%;
+	height: 100%;
+}
+
+.gallery-link {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.gallery-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.gallery-desc{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 72px;
+	padding: 0 15px;
+	overflow: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	text-transform: uppercase;
+	line-height: 18px;
+	color: #bbb;
+	font-size: 14px;
+}
+
+.grid figure,
+.grid .placeholder {
+	width: 202px;
+	height: 196px;
+}
+.grid figure {
+	display:block;
+	float:left;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position:relative;
+}
+.grid figure p{
+	margin:0;
+	position: absolute;
+	bottom: 0;
+	z-index: 3;
+	width: 100%;
+	height: 70px;
+	background: url('../images/bg-summary.png') no-repeat 50% 0;
+	transition: all 0.75s cubic-bezier(0.19,1,0.22,1);
+}
+.grid figure h4{
+	position: absolute;
+	margin:0;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	z-index: 4;
+	max-height: 40px;
+	overflow: hidden;
+	padding: 0 15px;
+	text-transform: uppercase;
+	line-height: 20px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+}
+.grid figure img{
+	transition:all .5s ease;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	filter: gray;
+}
+.grid figure:hover img{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	transform:scale(1.1,1.1);	
+}
+.grid figure:hover p{
+	background: url('../images/bg-summary.png') no-repeat 50% 100%;
+}
+.main .bottom_tip{
+	padding-bottom: 50px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #333;
+	line-height: 1;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+}
